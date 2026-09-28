@@ -1,0 +1,604 @@
+{
+  "request": {
+    "query": "What is the distribution of enrollment sizes for Phase 3 Alzheimer's trials?",
+    "max_citations_per_datum": 5
+  },
+  "response": {
+    "visualization": {
+      "type": "histogram",
+      "title": "Distribution of enrollment: alzheimer's disease; Phase 3",
+      "subtitle": "373 trials with a value",
+      "encoding": {
+        "x": {
+          "field": "bin_label",
+          "type": "ordinal",
+          "title": "Enrollment",
+          "unit": "participants",
+          "sort": [
+            "0–19",
+            "20–49",
+            "50–99",
+            "100–249",
+            "250–499",
+            "500–999",
+            "1,000–4,999",
+            "5,000+"
+          ]
+        },
+        "y": {
+          "field": "trial_count",
+          "type": "quantitative",
+          "title": "Number of trials",
+          "unit": "trials",
+          "sort": null
+        },
+        "series": null,
+        "tooltip": [
+          "bin_label",
+          "trial_count"
+        ]
+      },
+      "data": [
+        {
+          "bin_label": "0–19",
+          "bin_start": 0,
+          "bin_end": 20,
+          "trial_count": 16,
+          "citation_count": 16,
+          "citations": [
+            {
+              "nct_id": "NCT00255086",
+              "title": "The Effect of Memantine on Brain Structure and Chemistry in Alzheimer's Disease Patients",
+              "url": "https://clinicaltrials.gov/study/NCT00255086",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "17"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00743743",
+              "title": "Pilot Study of the Effects of Resveratrol Supplement in Mild-to-moderate Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00743743",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "0"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01053312",
+              "title": "PET Imaging of Brain Amyloid in Normal Pressure Hydrocephalus",
+              "url": "https://clinicaltrials.gov/study/NCT01053312",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "7"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01066546",
+              "title": "An Extension To The B1451006 Protocol To Evaluate The Safety and Efficacy of Dimebon In Subjects With Moderate-to-Severe Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT01066546",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "5"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01092546",
+              "title": "Positron Emission Tomography Imaging of Brain Amyloid in Normal Pressure Hydrocephalus",
+              "url": "https://clinicaltrials.gov/study/NCT01092546",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "12"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bin_label": "20–49",
+          "bin_start": 20,
+          "bin_end": 50,
+          "trial_count": 27,
+          "citation_count": 27,
+          "citations": [
+            {
+              "nct_id": "NCT00065767",
+              "title": "Cognitive and Neurophysiological Effects of Raloxifene in Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00065767",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "20"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00066157",
+              "title": "Alzheimer's Disease: Therapeutic Potential of Estrogen",
+              "url": "https://clinicaltrials.gov/study/NCT00066157",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "42"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00097916",
+              "title": "An Evaluation of the Safety and Efficacy of Memantine in Agitated Patients With Moderate to Severe Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00097916",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "34"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00134953",
+              "title": "Efficacy and Safety of Rivastigmine in Patients With Mild Cognitive Impairment",
+              "url": "https://clinicaltrials.gov/study/NCT00134953",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "24"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00287742",
+              "title": "A Study of the Effectiveness and Safety of Risperidone Versus Placebo in the Treatment of Patients With Hallucinations and Delusions Associated With Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00287742",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "33"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bin_label": "50–99",
+          "bin_start": 50,
+          "bin_end": 100,
+          "trial_count": 24,
+          "citation_count": 24,
+          "citations": [
+            {
+              "nct_id": "NCT00082602",
+              "title": "Safety and Tolerability Study of Extended Release (ER) Galantamine in Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00082602",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "83"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00160147",
+              "title": "Treatment of Elderly Subjects With Psychosis and Behavioral Disturbances Associated With Dementia of the Alzheimer's Type",
+              "url": "https://clinicaltrials.gov/study/NCT00160147",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "60"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00190021",
+              "title": "Donepezil Treatment of Psychotic Symptoms in Dementia Patients",
+              "url": "https://clinicaltrials.gov/study/NCT00190021",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "80"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00255866",
+              "title": "Improving Mood and Behavior in Assisted Living Residents Through Skills Training for Their Caregivers",
+              "url": "https://clinicaltrials.gov/study/NCT00255866",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "90"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00416078",
+              "title": "Online Caregiver Psychoeducation and Support for Alzheimer's",
+              "url": "https://clinicaltrials.gov/study/NCT00416078",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "53"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bin_label": "100–249",
+          "bin_start": 100,
+          "bin_end": 250,
+          "trial_count": 77,
+          "citation_count": 77,
+          "citations": [
+            {
+              "nct_id": "NCT00000177",
+              "title": "Estrogen Hormone Protocol",
+              "url": "https://clinicaltrials.gov/study/NCT00000177",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "120"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00065689",
+              "title": "High Intensity Light Therapy in Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00065689",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "107"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00086138",
+              "title": "Depression in Alzheimer's Disease-2",
+              "url": "https://clinicaltrials.gov/study/NCT00086138",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "131"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00095719",
+              "title": "Intramuscular Aripiprazole in Acutely Agitated Patients Diagnosed With Dementia",
+              "url": "https://clinicaltrials.gov/study/NCT00095719",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "125"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00096473",
+              "title": "Efficacy and Safety of Aricept in the Treatment of Severe Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00096473",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "229"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bin_label": "250–499",
+          "bin_start": 250,
+          "bin_end": 500,
+          "trial_count": 88,
+          "citation_count": 88,
+          "citations": [
+            {
+              "nct_id": "NCT00034762",
+              "title": "Efficacy and Safety of Risperidone Compared With Placebo in the Treatment of Psychotic Symptoms in Patients With Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00034762",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "473"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00053599",
+              "title": "Cholesterol Lowering Agent to Slow Progression (CLASP) of Alzheimer's Disease Study",
+              "url": "https://clinicaltrials.gov/study/NCT00053599",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "400"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00056225",
+              "title": "VITAL - VITamins to Slow ALzheimer's Disease (Homocysteine Study)",
+              "url": "https://clinicaltrials.gov/study/NCT00056225",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "340"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00056329",
+              "title": "Vitamin E in Aging Persons With Down Syndrome",
+              "url": "https://clinicaltrials.gov/study/NCT00056329",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "350"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00056628",
+              "title": "COGNIShunt® System for Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00056628",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "250"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bin_label": "500–999",
+          "bin_start": 500,
+          "bin_end": 1000,
+          "trial_count": 73,
+          "citation_count": 73,
+          "citations": [
+            {
+              "nct_id": "NCT00056524",
+              "title": "Safety Study of AVP-923 in the Treatment of IEED (Involuntary Emotional Expression Disorder) Also Known as Pseudobulbar Affect (Episodes of Uncontrolled Crying and/or Laughter)",
+              "url": "https://clinicaltrials.gov/study/NCT00056524",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "600"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00088673",
+              "title": "Evaluation of 3APS in Patients With Mild to Moderate Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00088673",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "950"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00151502",
+              "title": "To Evaluate the Safety and Effectiveness of Atorvastatin Plus a Cholinesterase Inhibitor in AD Patients.",
+              "url": "https://clinicaltrials.gov/study/NCT00151502",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "600"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00217763",
+              "title": "European Study of 3APS in Mild to Moderate Alzheimer's Disease Patients",
+              "url": "https://clinicaltrials.gov/study/NCT00217763",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "930"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00219232",
+              "title": "An Open-label Extension to Evaluate the Efficacy and Safety of the Rivastigmine Transdermal Patch in Patients With Probable Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00219232",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "868"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bin_label": "1,000–4,999",
+          "bin_start": 1000,
+          "bin_end": 5000,
+          "trial_count": 65,
+          "citation_count": 65,
+          "citations": [
+            {
+              "nct_id": "NCT00007189",
+              "title": "Alzheimer's Disease Anti-Inflammatory Prevention Trial (ADAPT)",
+              "url": "https://clinicaltrials.gov/study/NCT00007189",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "2625"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00010803",
+              "title": "Ginkgo Biloba Prevention Trial in Older Individuals",
+              "url": "https://clinicaltrials.gov/study/NCT00010803",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "3069"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00099242",
+              "title": "Efficacy and Safety of the Rivastigmine Transdermal Patch in Patients With Probable Alzheimer's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00099242",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "1040"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00103649",
+              "title": "18-Month Study of the Efficacy of Xaliproden (SR57746A) in Patients With Mild-to-Moderate Dementia of the Alzheimer's Type",
+              "url": "https://clinicaltrials.gov/study/NCT00103649",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "1306"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00104013",
+              "title": "Study of Xaliproden (SR57746A) in Patients With Mild-to-Moderate Dementia of the Alzheimer's Type",
+              "url": "https://clinicaltrials.gov/study/NCT00104013",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "1455"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "bin_label": "5,000+",
+          "bin_start": 5000,
+          "bin_end": null,
+          "trial_count": 3,
+          "citation_count": 3,
+          "citations": [
+            {
+              "nct_id": "NCT03848312",
+              "title": "Preventing Alzheimer's With Cognitive Training",
+              "url": "https://clinicaltrials.gov/study/NCT03848312",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "7600"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04526990",
+              "title": "Phase III Trial of A COVID-19 Vaccine of Adenovirus Vector in Adults 18 Years Old and Above",
+              "url": "https://clinicaltrials.gov/study/NCT04526990",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "44247"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07177352",
+              "title": "Screening Study to Determine Individuals With Potential Trial Eligibility for Alzheimer's Disease Studies",
+              "url": "https://clinicaltrials.gov/study/NCT07177352",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.enrollmentInfo.count",
+                  "value": "80000"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "meta": {
+      "source": "ClinicalTrials.gov API v2",
+      "api_version": "2.0.5",
+      "data_timestamp": "2026-09-25T09:00:04",
+      "query": "What is the distribution of enrollment sizes for Phase 3 Alzheimer's trials?",
+      "planner": {
+        "method": "llm",
+        "model": "gpt-5.4-mini",
+        "fallback_reason": null,
+        "plan": {
+          "analysis": "histogram",
+          "filters": {
+            "drug": null,
+            "condition": "alzheimer's disease",
+            "sponsor": null,
+            "country": null,
+            "phases": [
+              "PHASE3"
+            ],
+            "statuses": [],
+            "study_type": null,
+            "start_year": null,
+            "end_year": null
+          },
+          "group_by": null,
+          "series_by": null,
+          "compare": null,
+          "network": null,
+          "numeric": {
+            "x": "enrollment",
+            "y": null
+          },
+          "top_n": null,
+          "rationale": "The question asks for the distribution of a numeric trial attribute within Phase 3 Alzheimer's trials."
+        },
+        "overrides": [],
+        "adjustments": []
+      },
+      "filters_applied": {
+        "condition": "alzheimer's disease",
+        "phases": [
+          "PHASE3"
+        ]
+      },
+      "cohorts": [
+        {
+          "label": "alzheimer's disease",
+          "api_total": 385,
+          "fetched": 385,
+          "analyzed": 385,
+          "excluded": 0,
+          "excluded_nct_ids": [],
+          "truncated": false
+        }
+      ],
+      "units": "trials",
+      "time_granularity": null,
+      "counting_rules": [
+        "Enrollment is the registered count: actual for completed trials, anticipated otherwise.",
+        "Each bin covers [bin_start, bin_end); the last bin also includes its upper edge, and bin_end = null means it is open-ended."
+      ],
+      "warnings": [
+        "12 of 385 trials have no enrollment and are not shown."
+      ],
+      "api_requests": [
+        "https://clinicaltrials.gov/api/v2/studies?countTotal=true&fields=BriefTitle%2CEnrollmentCount%2CNCTId&filter.advanced=AREA%5BPhase%5DPHASE3&format=json&pageSize=1000&query.cond=alzheimer%27s+disease"
+      ],
+      "generated_at": "2026-09-27T20:17:29.349682Z"
+    }
+  }
+}

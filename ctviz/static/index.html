@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trials Visualizer Demo</title>
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<style>
+  :root { --bg:#fbfbfa; --fg:#1d1d1b; --muted:#6b6b66; --line:#e3e2dd; --accent:#2f5d8a; --card:#fff; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.45 system-ui, -apple-system, sans-serif; background:var(--bg); color:var(--fg); }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 60px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 18px; }
+  form { display:flex; gap:8px; flex-wrap:wrap; }
+  input[type=text] { flex:1 1 420px; padding:10px 12px; border:1px solid var(--line); border-radius:8px; font:inherit; }
+  button { padding:10px 16px; border:0; border-radius:8px; background:var(--accent); color:#fff; font:inherit; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:wait; }
+  .examples { margin:10px 0 20px; display:flex; gap:6px; flex-wrap:wrap; }
+  .examples button { background:transparent; color:var(--accent); border:1px solid var(--line); padding:5px 10px; font-size:13px; }
+  .layout { display:grid; grid-template-columns: minmax(0,1fr) 320px; gap:16px; }
+  @media (max-width: 860px) { .layout { grid-template-columns: 1fr; } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; min-width:0; }
+  #chart { overflow-x:auto; }
+  /* vega-lite's width:"container" needs a block-level, full-width embed element */
+  #plot, #plot .vega-embed { display:block; width:100%; }
+  #chart h2 { font-size:16px; margin:0 0 2px; }
+  #chart .subtitle { color:var(--muted); font-size:13px; margin-bottom:10px; }
+  #side h3 { font-size:14px; margin:0 0 8px; }
+  #side ul { padding-left:16px; margin:0; }
+  #side li { margin-bottom:10px; font-size:13px; }
+  #side code { font-size:11px; color:var(--muted); word-break:break-all; }
+  .meta { margin-top:16px; font-size:13px; color:var(--muted); }
+  .meta li { margin-bottom:4px; }
+  .error { color:#a33; }
+  svg text { font: 11px system-ui, sans-serif; fill: var(--fg); }
+</style>
+</head>
+<body>
+<main>
+  <h1>ClinicalTrials.gov question → chart</h1>
+  <p class="sub">Demo client for <code>POST /v1/visualize</code>. Click a bar, point, node or edge to see the trials behind it.</p>
+  <form id="f">
+    <input id="q" type="text" placeholder="e.g. How are glioblastoma trials distributed across phases?" required>
+    <button id="go">Visualize</button>
+  </form>
+  <div class="examples" id="examples"></div>
+  <div class="layout">
+    <div class="card" id="chart"><span class="sub">No chart yet.</span></div>
+    <div class="card" id="side"><h3>Citations</h3><p class="sub">Select a datum.</p></div>
+  </div>
+  <div class="meta" id="meta"></div>
+</main>
+<script>
+const EXAMPLES = [
+  "How has the number of trials for Tirzepatide changed per year since 2015?",
+  "How are Huntington's disease trials distributed across phases?",
+  "Compare phases for trials involving semaglutide vs tirzepatide.",
+  "Which countries have the most recruiting trials for Duchenne muscular dystrophy?",
+  "Show a network of sponsors and drugs for recruiting glioblastoma trials.",
+  "What is the distribution of enrollment sizes for Phase 3 Alzheimer's trials?",
+];
+const ex = document.getElementById("examples");
+EXAMPLES.forEach(q => { const b = document.createElement("button"); b.type = "button"; b.textContent = q;
+  b.onclick = () => { document.getElementById("q").value = q; run(q); }; ex.appendChild(b); });
+document.getElementById("f").onsubmit = e => { e.preventDefault(); run(document.getElementById("q").value); };
+
+function esc(s) { return String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+
+function showCitations(datum, heading) {
+  const side = document.getElementById("side");
+  const items = (datum.citations || []).map(c => `<li><a href="${esc(c.url)}" target="_blank">${esc(c.nct_id)}</a> ${esc(c.title || "")}
+      ${c.evidence.map(e => `<br><code>${esc(e.field)} = "${esc(e.value)}"</code>`).join("")}</li>`).join("");
+  const more = datum.citation_count > (datum.citations || []).length
+    ? `<p class="sub">Showing ${datum.citations.length} of ${datum.citation_count}.</p>` : "";
+  side.innerHTML = `<h3>${esc(heading)} (${datum.citation_count} trials)</h3>${more}<ul>${items}</ul>`;
+}
+
+// Map the service's encoding onto Vega-Lite. Nothing here guesses: every field name,
+// type, title and order comes from the response.
+function vegaSpec(viz) {
+  const enc = viz.encoding;
+  const axis = ch => ({ field: ch.field, type: ch.type, title: ch.title,
+                        ...(Array.isArray(ch.sort) ? { sort: ch.sort } : {}) });
+  const base = { $schema: "https://vega.github.io/schema/vega-lite/v5.json", width: "container", height: 340,
+                 data: { values: viz.data.map((d, i) => ({ ...d, __i: i })) },
+                 params: [{ name: "pick", select: { type: "point", fields: ["__i"] } }] };
+  const tooltip = enc.tooltip.map(f => ({ field: f }));
+  const color = enc.series ? { field: enc.series.field, type: "nominal", title: enc.series.title, legend: { labelLimit: 240 },
+                               ...(Array.isArray(enc.series.sort) ? { sort: enc.series.sort } : {}) } : { value: "#2f5d8a" };
+  switch (viz.type) {
+    case "bar_chart":
+      return { ...base, mark: "bar", encoding: { x: { ...axis(enc.x), axis: { labelAngle: -35 } }, y: axis(enc.y), tooltip } };
+    case "grouped_bar_chart":
+      return { ...base, mark: "bar", encoding: { x: { ...axis(enc.x), axis: { labelAngle: -35 } }, y: axis(enc.y),
+               xOffset: { field: enc.series.field, sort: enc.series.sort }, color, tooltip } };
+    case "time_series":
+      return { ...base, mark: { type: "line", point: true }, encoding: { x: axis(enc.x), y: axis(enc.y), color, tooltip } };
+    case "histogram":
+      return { ...base, mark: "bar", encoding: { x: axis(enc.x), y: axis(enc.y),
+               ...(enc.series ? { xOffset: { field: enc.series.field }, color } : {}), tooltip } };
+    case "scatter_plot":
+      return { ...base, mark: { type: "point", filled: true, opacity: 0.6 },
+               encoding: { x: { ...axis(enc.x), scale: { zero: false } }, y: axis(enc.y), color, tooltip } };
+  }
+}
+
+function drawNetwork(el, viz) {
+  const width = el.clientWidth - 32, height = 520;
+  const nodes = viz.data.nodes.map(n => ({ ...n })), links = viz.data.edges.map(e => ({ ...e }));
+  const size = d3.scaleSqrt().domain([1, d3.max(nodes, n => n.trial_count)]).range([4, 22]);
+  const color = d3.scaleOrdinal(["#2f5d8a", "#c2703d", "#4f8a5b", "#8a4f7d"]);
+  const svg = d3.select(el).append("svg").attr("width", width).attr("height", height);
+  const sim = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d => d.id).distance(90))
+    .force("charge", d3.forceManyBody().strength(-220))
+    .force("center", d3.forceCenter(width / 2, height / 2))
+    .force("collide", d3.forceCollide(d => size(d.trial_count) + 4))
+    // pull separate components toward the middle so they stay on screen
+    .force("x", d3.forceX(width / 2).strength(0.06)).force("y", d3.forceY(height / 2).strength(0.08));
+  const link = svg.append("g").selectAll("line").data(links).join("line")
+    .attr("stroke", "#9a9a94").attr("stroke-opacity", .6).attr("stroke-width", d => 1 + Math.log2(d.trial_count) * 1.5)
+    .style("cursor", "pointer").on("click", (_, d) => showCitations(d, `${d.source.label} — ${d.target.label}`));
+  const node = svg.append("g").selectAll("g").data(nodes).join("g").style("cursor", "pointer")
+    .on("click", (_, d) => showCitations(d, d.label))
+    .call(d3.drag().on("start", (e, d) => { if (!e.active) sim.alphaTarget(.3).restart(); d.fx = d.x; d.fy = d.y; })
+                   .on("drag", (e, d) => { d.fx = e.x; d.fy = e.y; })
+                   .on("end", (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = d.fy = null; }));
+  node.append("circle").attr("r", d => size(d.trial_count)).attr("fill", d => color(d.entity_type));
+  node.append("text").text(d => d.label.length > 28 ? d.label.slice(0, 27) + "…" : d.label).attr("x", d => size(d.trial_count) + 3).attr("y", 4);
+  node.append("title").text(d => `${d.label} (${d.entity_type}): ${d.trial_count} trials`);
+  sim.on("tick", () => {
+    // clamp positions (not just drawing) so edges still meet their nodes at the border
+    nodes.forEach(d => { d.x = Math.max(12, Math.min(width - 120, d.x)); d.y = Math.max(12, Math.min(height - 12, d.y)); });
+    link.attr("x1", d => d.source.x).attr("y1", d => d.source.y).attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+    node.attr("transform", d => `translate(${d.x},${d.y})`);
+  });
+}
+
+async function run(query) {
+  const btn = document.getElementById("go"), chart = document.getElementById("chart");
+  btn.disabled = true; chart.innerHTML = '<span class="sub">Working… (large queries can take a few seconds)</span>';
+  document.getElementById("side").innerHTML = '<h3>Citations</h3><p class="sub">Select a datum.</p>';
+  document.getElementById("meta").innerHTML = "";
+  try {
+    const res = await fetch("/v1/visualize", { method: "POST", headers: { "Content-Type": "application/json" },
+                                               body: JSON.stringify({ query, max_citations_per_datum: 25 }) });
+    const text = await res.text();
+    let body;
+    try { body = JSON.parse(text); }
+    catch { throw new Error(`Server error ${res.status}: ${text.slice(0, 200)} (see the server log)`); }
+    if (!res.ok) throw new Error(typeof body.detail === "string" ? body.detail : JSON.stringify(body.detail));
+    const viz = body.visualization;
+    chart.innerHTML = `<h2>${esc(viz.title)}</h2><div class="subtitle">${esc(viz.subtitle || "")}</div><div id="plot"></div>`;
+    const plot = document.getElementById("plot");
+    if (viz.type === "network_graph") drawNetwork(plot, viz);
+    else {
+      const { view } = await vegaEmbed(plot, vegaSpec(viz), { actions: false, renderer: "svg" });
+      view.addEventListener("click", (_, item) => {
+        if (item && item.datum && item.datum.__i !== undefined) {
+          const d = viz.data[item.datum.__i];
+          // Label the datum by what it is (its x category, plus series if any), not by its count.
+          const keys = [viz.encoding.x.field, viz.encoding.series && viz.encoding.series.field].filter(Boolean);
+          showCitations(d, keys.map(k => d[k]).filter(v => v !== undefined && v !== null).join(" · "));
+        }
+      });
+    }
+    const m = body.meta;
+    document.getElementById("meta").innerHTML = `<ul>
+      <li>Planner: ${esc(m.planner.method)}${m.planner.model ? " (" + esc(m.planner.model) + ")" : ""}${m.planner.fallback_reason ? " — " + esc(m.planner.fallback_reason) : ""}</li>
+      <li>Cohorts: ${m.cohorts.map(c => `${esc(c.label)}: ${c.analyzed} analyzed of ${c.api_total} matched`).join("; ")}</li>
+      ${m.counting_rules.map(r => `<li>${esc(r)}</li>`).join("")}
+      ${m.warnings.map(w => `<li>⚠ ${esc(w)}</li>`).join("")}
+      <li>Data: ${esc(m.source)} ${esc(m.api_version || "")}, snapshot ${esc(m.data_timestamp || "n/a")}</li></ul>`;
+  } catch (err) {
+    chart.innerHTML = `<p class="error">${esc(err.message)}</p>`;
+  } finally { btn.disabled = false; }
+}
+</script>
+</body>
+</html>

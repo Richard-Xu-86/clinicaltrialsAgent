@@ -1,0 +1,30 @@
+[project]
+name = "ctviz-agent"
+version = "1.0.0"
+description = "ClinicalTrials.gov query-to-visualization backend"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "httpx>=0.27",
+    "pydantic>=2.6",
+    "pydantic-settings>=2.2",
+    "openai>=1.60",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "respx>=0.21", "ruff>=0.5"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+ignore = [
+    "E501",   # long strings in user-facing messages read better unbroken
+    "UP042",  # (str, Enum) kept deliberately; behaves identically with pydantic
+]

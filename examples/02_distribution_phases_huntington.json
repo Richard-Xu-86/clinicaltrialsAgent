@@ -1,0 +1,1013 @@
+{
+  "request": {
+    "query": "How are Huntington's disease trials distributed across phases?"
+  },
+  "response": {
+    "visualization": {
+      "type": "bar_chart",
+      "title": "Trials by phase: Huntington's disease",
+      "subtitle": "302 trials analyzed",
+      "encoding": {
+        "x": {
+          "field": "phase",
+          "type": "ordinal",
+          "title": "Phase",
+          "unit": null,
+          "sort": [
+            "Early Phase 1",
+            "Phase 1",
+            "Phase 1/2",
+            "Phase 2",
+            "Phase 2/3",
+            "Phase 3",
+            "Phase 4",
+            "Not applicable",
+            "No phase (e.g. observational)"
+          ]
+        },
+        "y": {
+          "field": "trial_count",
+          "type": "quantitative",
+          "title": "Number of trials",
+          "unit": "trials",
+          "sort": null
+        },
+        "series": null,
+        "tooltip": [
+          "phase",
+          "trial_count"
+        ]
+      },
+      "data": [
+        {
+          "phase": "Early Phase 1",
+          "trial_count": 6,
+          "citation_count": 6,
+          "citations": [
+            {
+              "nct_id": "NCT02061722",
+              "title": "[PETDE10] Imaging of PDE10A Enzyme Levels in Huntington's Disease Gene Expansion Carriers and Healthy Controls With PET.",
+              "url": "https://clinicaltrials.gov/study/NCT02061722",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "EARLY_PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02956148",
+              "title": "Follow-up Measurement of Brain PDE10A Enzyme Levels in Huntington´s Disease Gene Expansion Carriers",
+              "url": "https://clinicaltrials.gov/study/NCT02956148",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "EARLY_PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT03810898",
+              "title": "iMagemHTT: FIH Evaluation of Novel Mutant Huntingtin PET Radioligands [¹¹C]CHDI-00485180-R and [¹¹C]CHDI-00485626",
+              "url": "https://clinicaltrials.gov/study/NCT03810898",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "EARLY_PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06024265",
+              "title": "The Safety and Tolerability Study With ER2001 Intravenous Injection in Adults With Early Manifest Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT06024265",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "EARLY_PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06634628",
+              "title": "iMagemHTT-009- FIH Evaluation of Novel Mutant Huntingtin PET Radioligand [11C]CHDI-00491009",
+              "url": "https://clinicaltrials.gov/study/NCT06634628",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "EARLY_PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07344519",
+              "title": "The Safety and Tolerability Study With ER2001 Intravenous Injection Repetitive Treatment in Adults With Early Manifest Huntington's Disease.",
+              "url": "https://clinicaltrials.gov/study/NCT07344519",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "EARLY_PHASE1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "Phase 1",
+          "trial_count": 40,
+          "citation_count": 40,
+          "citations": [
+            {
+              "nct_id": "NCT00178360",
+              "title": "Effects of Music Therapy on Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00178360",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00514774",
+              "title": "Ursodiol in Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00514774",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00675077",
+              "title": "Far Infrared Irradiation for Managing, Control and Treatment of Huntington's Disease (HD)",
+              "url": "https://clinicaltrials.gov/study/NCT00675077",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00788047",
+              "title": "A Phase 1 Study To Evaluate The Effect Of Dimebon On The Pharmacokinetics Of Dextromethorphan",
+              "url": "https://clinicaltrials.gov/study/NCT00788047",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00824590",
+              "title": "A Phase 1, Non-Randomized, Open-Label, Single-Dose Study To Evaluate The Pharmacokinetics, Safety, And Tolerability Of Dimebon [PF 01913539] In Subjects With Severely-Impaired And Normal Renal Function",
+              "url": "https://clinicaltrials.gov/study/NCT00824590",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00825084",
+              "title": "A Phase 1 Study To Evaluate The Pharmacokinetics, Safety, And Tolerability Of Dimebon [PF-01913539] In Japanese And Western Healthy Subjects",
+              "url": "https://clinicaltrials.gov/study/NCT00825084",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00827034",
+              "title": "A Phase 1, Randomized, Open-Label, Two-Way Crossover Study To Evaluate The Steady-State Effect Of Dimebon (PF 01913539) On The Single-Dose Pharmacokinetics And Pharmacodynamics Of Warfarin In Healthy Subjects",
+              "url": "https://clinicaltrials.gov/study/NCT00827034",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00831506",
+              "title": "Dimebon (PF-01913539)-Digoxin Drug-Drug Interaction Study In Healthy Subjects",
+              "url": "https://clinicaltrials.gov/study/NCT00831506",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00870974",
+              "title": "A PET Brain Imaging Study of mGluR5 in Subjects With Neuropsychiatric Conditions",
+              "url": "https://clinicaltrials.gov/study/NCT00870974",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00902889",
+              "title": "Deep Brain Stimulation of the Globus Pallidus in Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00902889",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "Phase 1/2",
+          "trial_count": 18,
+          "citation_count": 18,
+          "citations": [
+            {
+              "nct_id": "NCT00026988",
+              "title": "Creatine Therapy for Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00026988",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1, PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00029874",
+              "title": "Minocycline in Patients With Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00029874",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1, PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00387270",
+              "title": "Safety Study of the Novel Drug Dimebon to Treat Patients With Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00387270",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1, PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01834053",
+              "title": "Safety and Efficacy of Bone Marrow Derived MNCs for Treatment of Cells for the Treatment of Hunting Tons Chorea.",
+              "url": "https://clinicaltrials.gov/study/NCT01834053",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1, PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02519036",
+              "title": "Safety, Tolerability, Pharmacokinetics, and Pharmacodynamics of ISIS 443139 in Participants With Early Manifest Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT02519036",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1, PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT03225833",
+              "title": "Safety and Tolerability of WVE-120101 in Patients With Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT03225833",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1, PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT03225846",
+              "title": "Safety and Tolerability of WVE-120102 in Patients With Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT03225846",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1, PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT03306888",
+              "title": "Feasibility and Acceptability of Implementing a Clinic-based Physical Activity Coaching Intervention in People With Premanifest and Early Stage HD",
+              "url": "https://clinicaltrials.gov/study/NCT03306888",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1, PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04120493",
+              "title": "Safety and Proof-of-Concept (POC) Study With AMT-130 in Adults With Early Manifest Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT04120493",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1, PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04617847",
+              "title": "Open-label Extension Study to Evaluate the Safety and Tolerability of WVE-120101 in Patients With Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT04617847",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE1, PHASE2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "Phase 2",
+          "trial_count": 51,
+          "citation_count": 51,
+          "citations": [
+            {
+              "nct_id": "NCT00001930",
+              "title": "Treatment of Huntington's Chorea With Amantadine",
+              "url": "https://clinicaltrials.gov/study/NCT00001930",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00095355",
+              "title": "Effects of Lithium and Divalproex'on Brain-Derived Neurotrophic Factor in Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00095355",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00190450",
+              "title": "MIG-HD: Multicentric Intracerebral Grafting in Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00190450",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00212316",
+              "title": "Safety and Tolerability Study of Phenylbutyrate in Huntington's Disease (PHEND-HD)",
+              "url": "https://clinicaltrials.gov/study/NCT00212316",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00271596",
+              "title": "Citalopram to Enhance Cognition in HD",
+              "url": "https://clinicaltrials.gov/study/NCT00271596",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00368849",
+              "title": "Atomoxetine and Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00368849",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00497159",
+              "title": "A Study of the Novel Drug Dimebon in Patients With Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00497159",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00592995",
+              "title": "Creatine Safety and Tolerability in Premanifest HD: PRECREST",
+              "url": "https://clinicaltrials.gov/study/NCT00592995",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00724048",
+              "title": "A Study of Pridopidine (ACR16) for the Treatment of Participants With Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00724048",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00920699",
+              "title": "Study in PRE-manifest Huntington's Disease of Coenzyme Q10 (UbiquinonE) Leading to Preventive Trials (PREQUEL)",
+              "url": "https://clinicaltrials.gov/study/NCT00920699",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "Phase 2/3",
+          "trial_count": 7,
+          "citation_count": 7,
+          "citations": [
+            {
+              "nct_id": "NCT00277355",
+              "title": "Pilot Study of Minocycline in Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00277355",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2, PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02101957",
+              "title": "Multicentric Trial of the Treatment of Huntington's Disease by Cysteamine (RP103)",
+              "url": "https://clinicaltrials.gov/study/NCT02101957",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2, PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04219241",
+              "title": "Clinical Extension Study for Safety and Efficacy Evaluation of Cellavita-HD Administration in Huntington's Patients.",
+              "url": "https://clinicaltrials.gov/study/NCT04219241",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2, PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04713982",
+              "title": "Impact of Deutetrabenazine on Functional Speech and Gait Dynamics in Huntington Disease",
+              "url": "https://clinicaltrials.gov/study/NCT04713982",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2, PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06873334",
+              "title": "Study of SKY-0515 for Safety, Efficacy, and Pharmacodynamics in Participants With Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT06873334",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2, PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07378644",
+              "title": "Study to Evaluate the Pharmacodynamics, Safety and Efficacy of SKY-0515 in Participants With Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT07378644",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2, PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07537075",
+              "title": "An Extension of SKY-0515 in Participants With Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT07537075",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE2, PHASE3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "Phase 3",
+          "trial_count": 23,
+          "citation_count": 23,
+          "citations": [
+            {
+              "nct_id": "NCT00146211",
+              "title": "TREND-HD - A Trial of Ethyl-EPA (Miraxion™) in Treating Mild to Moderate Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00146211",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00219804",
+              "title": "Efficacy and Safety of Tetrabenazine in Chorea",
+              "url": "https://clinicaltrials.gov/study/NCT00219804",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00277602",
+              "title": "Riluzole in Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00277602",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00608881",
+              "title": "Coenzyme Q10 in Huntington's Disease (HD)",
+              "url": "https://clinicaltrials.gov/study/NCT00608881",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00632645",
+              "title": "Neuroleptic and Huntington Disease Comparison of : Olanzapine, la Tetrabenazine and Tiapride",
+              "url": "https://clinicaltrials.gov/study/NCT00632645",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00665223",
+              "title": "A Study of Treatment With Pridopidine (ACR16) in Participants With Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00665223",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00712426",
+              "title": "Creatine Safety, Tolerability, & Efficacy in Huntington's Disease (CREST-E)",
+              "url": "https://clinicaltrials.gov/study/NCT00712426",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00920946",
+              "title": "A Safety and Efficacy Study of Dimebon in Patients With Huntington Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00920946",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01085266",
+              "title": "An Extension of the HORIZON Protocol Evaluating the Safety of Dimebon (Latrepirdine) in Subjects With Huntington Disease",
+              "url": "https://clinicaltrials.gov/study/NCT01085266",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE3"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01795859",
+              "title": "First Time Use of SD-809 in Huntington Disease",
+              "url": "https://clinicaltrials.gov/study/NCT01795859",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "Phase 4",
+          "trial_count": 4,
+          "citation_count": 4,
+          "citations": [
+            {
+              "nct_id": "NCT00652457",
+              "title": "Study of Memantine to Treat Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00652457",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE4"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01834911",
+              "title": "Effect of Tetrabenazine on Stroop Interference in HD",
+              "url": "https://clinicaltrials.gov/study/NCT01834911",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE4"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02509793",
+              "title": "A Pilot Study Assessing Impulsivity in Patients With Huntington's Disease on Xenazine (Tetrabenazine)",
+              "url": "https://clinicaltrials.gov/study/NCT02509793",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE4"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07601516",
+              "title": "Real World Effectiveness and Safety of Deutetrabenazine in Adult Chinese Participants With Huntington's Disease (HD) Chorea in China",
+              "url": "https://clinicaltrials.gov/study/NCT07601516",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "PHASE4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "Not applicable",
+          "trial_count": 70,
+          "citation_count": 70,
+          "citations": [
+            {
+              "nct_id": "NCT00907595",
+              "title": "Treating Sleep/Wake Cycle Disturbances in Basal Ganglia Disorders With Ramelteon",
+              "url": "https://clinicaltrials.gov/study/NCT00907595",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "NA"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01339130",
+              "title": "Assessment of Social-emotional Functioning in Neurological Diseases",
+              "url": "https://clinicaltrials.gov/study/NCT01339130",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "NA"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01359774",
+              "title": "31P-MRS and Huntington Disease",
+              "url": "https://clinicaltrials.gov/study/NCT01359774",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "NA"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01602276",
+              "title": "The Effect of tDCS on Subcortical Brain Functioning",
+              "url": "https://clinicaltrials.gov/study/NCT01602276",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "NA"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01690312",
+              "title": "Clinical Study to Assess High-DHA Fish Oil on Biomarkers of Cardiovascular Disease Risk in Adults on Statin Therapy",
+              "url": "https://clinicaltrials.gov/study/NCT01690312",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "NA"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01696708",
+              "title": "Utilization of 31P-Nuclear Magnetic Resonance Spectroscopy to Monitor Brain Energy Deficit in Huntington Disease",
+              "url": "https://clinicaltrials.gov/study/NCT01696708",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "NA"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01735981",
+              "title": "The Effect of Video Game Exercise on Dynamic Balance and Gait in Individuals With Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT01735981",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "NA"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01842919",
+              "title": "Dance and Huntington Disease",
+              "url": "https://clinicaltrials.gov/study/NCT01842919",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "NA"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01879267",
+              "title": "Exercise Effects in Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT01879267",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "NA"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02134561",
+              "title": "Assessment of the Psychological, Cognitive and Social Resources of Applicants for Huntington's Disease and Presymptomatic Genetic Testing",
+              "url": "https://clinicaltrials.gov/study/NCT02134561",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": "NA"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "phase": "No phase (e.g. observational)",
+          "trial_count": 83,
+          "citation_count": 83,
+          "citations": [
+            {
+              "nct_id": "NCT00004753",
+              "title": "Long-Term Study of Cerebral Glucose Metabolism in Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00004753",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": null
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00051324",
+              "title": "Neurobiological Predictors of Huntington's Disease (PREDICT-HD)",
+              "url": "https://clinicaltrials.gov/study/NCT00051324",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": null
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00052143",
+              "title": "Prospective Huntington At Risk Observational Study",
+              "url": "https://clinicaltrials.gov/study/NCT00052143",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": null
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00075140",
+              "title": "Family Health After Predictive Huntington Disease (HD) Testing",
+              "url": "https://clinicaltrials.gov/study/NCT00075140",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": null
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00313495",
+              "title": "Cooperative Huntington's Observational Research Trial",
+              "url": "https://clinicaltrials.gov/study/NCT00313495",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": null
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00465790",
+              "title": "Research of Biomarkers in Parkinson Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00465790",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": null
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00491842",
+              "title": "Individuals Patterns of Disclosure About Huntington s Disease (HD) and the Association With Adaptation to HD",
+              "url": "https://clinicaltrials.gov/study/NCT00491842",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": null
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00539747",
+              "title": "Making Sense of a Positive Genetic Test Result for Huntington Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00539747",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": null
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00654563",
+              "title": "Memory Disorders Registry",
+              "url": "https://clinicaltrials.gov/study/NCT00654563",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": null
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT00670709",
+              "title": "Examination of Quantitative Electroencephalographic (QEEG) Biomarkers in Huntington's Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00670709",
+              "evidence": [
+                {
+                  "field": "protocolSection.designModule.phases",
+                  "value": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "meta": {
+      "source": "ClinicalTrials.gov API v2",
+      "api_version": "2.0.5",
+      "data_timestamp": "2026-09-25T09:00:04",
+      "query": "How are Huntington's disease trials distributed across phases?",
+      "planner": {
+        "method": "llm",
+        "model": "gpt-5.4-mini",
+        "fallback_reason": null,
+        "plan": {
+          "analysis": "distribution",
+          "filters": {
+            "drug": null,
+            "condition": "Huntington's disease",
+            "sponsor": null,
+            "country": null,
+            "phases": [],
+            "statuses": [],
+            "study_type": null,
+            "start_year": null,
+            "end_year": null
+          },
+          "group_by": "phase",
+          "series_by": null,
+          "compare": null,
+          "network": null,
+          "numeric": null,
+          "top_n": null,
+          "rationale": "The question asks for how Huntington's disease trials are distributed across phases."
+        },
+        "overrides": [],
+        "adjustments": []
+      },
+      "filters_applied": {
+        "condition": "Huntington's disease"
+      },
+      "cohorts": [
+        {
+          "label": "Huntington's disease",
+          "api_total": 302,
+          "fetched": 302,
+          "analyzed": 302,
+          "excluded": 0,
+          "excluded_nct_ids": [],
+          "truncated": false
+        }
+      ],
+      "units": "trials",
+      "time_granularity": null,
+      "counting_rules": [
+        "Trials registered under two phases (e.g. Phase 1 and Phase 2) are counted once, in a combined 'Phase 1/2' bucket, so bars sum to the number of trials."
+      ],
+      "warnings": [],
+      "api_requests": [
+        "https://clinicaltrials.gov/api/v2/studies?countTotal=true&fields=BriefTitle%2CNCTId%2CPhase&format=json&pageSize=1000&query.cond=Huntington%27s+disease"
+      ],
+      "generated_at": "2026-09-27T20:17:18.944702Z"
+    }
+  }
+}

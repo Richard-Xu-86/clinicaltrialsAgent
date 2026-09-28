@@ -1,0 +1,2168 @@
+{
+  "request": {
+    "query": "Show a network of sponsors and drugs for recruiting glioblastoma trials.",
+    "max_citations_per_datum": 5
+  },
+  "response": {
+    "visualization": {
+      "type": "network_graph",
+      "title": "Sponsor–drug network: glioblastoma; recruiting",
+      "subtitle": "25 nodes, 25 edges from 328 trials",
+      "encoding": {
+        "nodes": {
+          "id": "id",
+          "label": "label",
+          "size": "trial_count",
+          "color": "entity_type"
+        },
+        "edges": {
+          "source": "source",
+          "target": "target",
+          "weight": "trial_count"
+        },
+        "directed": false
+      },
+      "data": {
+        "nodes": [
+          {
+            "id": "drug:temozolomide",
+            "label": "Temozolomide",
+            "entity_type": "drug",
+            "trial_count": 44,
+            "citation_count": 44,
+            "citations": [
+              {
+                "nct_id": "NCT02977780",
+                "title": "INdividualized Screening Trial of Innovative Glioblastoma Therapy (INSIGhT)",
+                "url": "https://clinicaltrials.gov/study/NCT02977780",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Temozolomide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT03213002",
+                "title": "Oral Capecitabine and Temozolomide (CAPTEM) for Newly Diagnosed GBM",
+                "url": "https://clinicaltrials.gov/study/NCT03213002",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Temozolomide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT03970447",
+                "title": "A Trial to Evaluate Multiple Regimens in Newly Diagnosed and Recurrent Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT03970447",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Temozolomide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04267978",
+                "title": "Study of Recombinant Human Endostatin Combined with Temozolomide and Irinotecan in Recurrent Gliomas",
+                "url": "https://clinicaltrials.gov/study/NCT04267978",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "recombinant human endostatin,temozolomide,irinotecan"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04443010",
+                "title": "Safety and Efficacy of L19TNF Plus Temozolomide Chemoradiotherapy in Patients With Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT04443010",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Temozolomide"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drug:bevacizumab",
+            "label": "Bevacizumab",
+            "entity_type": "drug",
+            "trial_count": 12,
+            "citation_count": 12,
+            "citations": [
+              {
+                "nct_id": "NCT01269853",
+                "title": "Repeated Super-selective Intraarterial Cerebral Infusion of Bevacizumab (Avastin) for Treatment of Relapsed GBM and AA",
+                "url": "https://clinicaltrials.gov/study/NCT01269853",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Bevacizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05271240",
+                "title": "Repeated Superselective Intraarterial Cerebral Infusion (SIACI) of Bevacizumab With Temozolomide and Radiation Compared to Temozolomide and Radiation Alone in Newly Diagnosed GBM",
+                "url": "https://clinicaltrials.gov/study/NCT05271240",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Repeated Superselective Intraarterial Cerebral infusion (SIACI) of Bevacizumab (Avastin) with Temozolomide and Radiation"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05284643",
+                "title": "Spectroscopic MRI, Proton Therapy, and Avastin for Recurrent Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT05284643",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Bevacizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05956821",
+                "title": "Treatment of Relapsed/Refractory Intracranial Glioma in Patients Under 22 Years of Age",
+                "url": "https://clinicaltrials.gov/study/NCT05956821",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "SIACI of cetuximab and bevacizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06047379",
+                "title": "Safety and Efficacy of NEO212 in Patients With Astrocytoma IDH-mutant, Glioblastoma IDH-wildtype or Brain Metastasis",
+                "url": "https://clinicaltrials.gov/study/NCT06047379",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[8].name",
+                    "value": "Bevacizumab"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sponsor:mayo clinic",
+            "label": "Mayo Clinic",
+            "entity_type": "sponsor",
+            "trial_count": 11,
+            "citation_count": 11,
+            "citations": [
+              {
+                "nct_id": "NCT04047264",
+                "title": "Feasibility of Intra- and Post-operative Microdialysis During Neurosurgery for Central Nervous System Lesions",
+                "url": "https://clinicaltrials.gov/study/NCT04047264",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Mayo Clinic"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05465954",
+                "title": "Efineptakin Alfa and Pembrolizumab for the Treatment of Recurrent Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT05465954",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Mayo Clinic"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05789394",
+                "title": "Allogenic Adipose-Derived Mesenchymal Stem Cells for the Treatment of Recurrent Glioblastoma or Recurrent Astrocytoma in Patients Undergoing Craniotomy",
+                "url": "https://clinicaltrials.gov/study/NCT05789394",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Mayo Clinic"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05917145",
+                "title": "ATM-Inhibitor WSD0628 in Combination With Radiation Therapy for Treatment of Recurrent High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT05917145",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Mayo Clinic"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05969860",
+                "title": "At-Home Cancer Directed Therapy Versus in Clinic for the Treatment of Patients With Advanced Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05969860",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Mayo Clinic"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drug:pembrolizumab",
+            "label": "Pembrolizumab",
+            "entity_type": "drug",
+            "trial_count": 9,
+            "citation_count": 9,
+            "citations": [
+              {
+                "nct_id": "NCT04977375",
+                "title": "Trial of Anti-PD-1 Immunotherapy and Stereotactic Radiation in Patients With Recurrent Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT04977375",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Pembrolizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05084430",
+                "title": "Study of Pembrolizumab and M032 (NSC 733972)",
+                "url": "https://clinicaltrials.gov/study/NCT05084430",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Pembrolizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05465954",
+                "title": "Efineptakin Alfa and Pembrolizumab for the Treatment of Recurrent Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT05465954",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Pembrolizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06047379",
+                "title": "Safety and Efficacy of NEO212 in Patients With Astrocytoma IDH-mutant, Glioblastoma IDH-wildtype or Brain Metastasis",
+                "url": "https://clinicaltrials.gov/study/NCT06047379",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Pembrolizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06556563",
+                "title": "EF-41/KEYNOTE D58: Phase 3 Study of Optune Concomitant With Temozolomide Plus Pembrolizumab in Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT06556563",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Pembrolizumab"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sponsor:m.d. anderson cancer center",
+            "label": "M.D. Anderson Cancer Center",
+            "entity_type": "sponsor",
+            "trial_count": 7,
+            "citation_count": 7,
+            "citations": [
+              {
+                "nct_id": "NCT03896568",
+                "title": "MSC-DNX-2401 in Treating Patients With Recurrent High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT03896568",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "M.D. Anderson Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT03911388",
+                "title": "HSV G207 in Children With Recurrent or Refractory Cerebellar Brain Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT03911388",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "M.D. Anderson Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04479696",
+                "title": "Customized Neuro-Imaging Referenced Symptom Video for the Reduction of Patient and Caregiver Anxiety Around Radiation Treatment for Brain Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT04479696",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "M.D. Anderson Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04623931",
+                "title": "Chemotherapy and Radiation Therapy for the Treatment of IDH Wildtype Gliomas or Non-histological (Molecular) Glioblastomas",
+                "url": "https://clinicaltrials.gov/study/NCT04623931",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "M.D. Anderson Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT04991870",
+                "title": "Phase I CB-NK-TGF-ßR2-/NR3C1- in rGBM",
+                "url": "https://clinicaltrials.gov/study/NCT04991870",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "M.D. Anderson Cancer Center"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sponsor:northwell health",
+            "label": "Northwell Health",
+            "entity_type": "sponsor",
+            "trial_count": 7,
+            "citation_count": 7,
+            "citations": [
+              {
+                "nct_id": "NCT01269853",
+                "title": "Repeated Super-selective Intraarterial Cerebral Infusion of Bevacizumab (Avastin) for Treatment of Relapsed GBM and AA",
+                "url": "https://clinicaltrials.gov/study/NCT01269853",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT02800486",
+                "title": "Super Selective Intra-arterial Repeated Infusion of Cetuximab (Erbitux) With Reirradiation for Treatment of Relapsed/Refractory GBM, AA, and AOA",
+                "url": "https://clinicaltrials.gov/study/NCT02800486",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT02861898",
+                "title": "Super-selective Intra-arterial Repeated Infusion of Cetuximab for the Treatment of Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT02861898",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT03213002",
+                "title": "Oral Capecitabine and Temozolomide (CAPTEM) for Newly Diagnosed GBM",
+                "url": "https://clinicaltrials.gov/study/NCT03213002",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05271240",
+                "title": "Repeated Superselective Intraarterial Cerebral Infusion (SIACI) of Bevacizumab With Temozolomide and Radiation Compared to Temozolomide and Radiation Alone in Newly Diagnosed GBM",
+                "url": "https://clinicaltrials.gov/study/NCT05271240",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drug:cyclophosphamide",
+            "label": "Cyclophosphamide",
+            "entity_type": "drug",
+            "trial_count": 6,
+            "citation_count": 6,
+            "citations": [
+              {
+                "nct_id": "NCT05106296",
+                "title": "Chemo-immunotherapy Using Ibrutinib Plus Indoximod for Patients With Pediatric Brain Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT05106296",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Cyclophosphamide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06186401",
+                "title": "Anti-EGFRvIII synNotch Receptor Induced Anti-EphA2/IL-13Ralpha2 CAR (E-SYNC) T Cells",
+                "url": "https://clinicaltrials.gov/study/NCT06186401",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Cyclophosphamide (non-investigational)"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06640582",
+                "title": "TIL Therapy Combined With Pembrolizumab for Advanced Brain Cancer Including Gliomas and Meningiomas",
+                "url": "https://clinicaltrials.gov/study/NCT06640582",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Cyclophosphamide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07480941",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07480941",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Cyclophosphamide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07523529",
+                "title": "Biomarker-Guided Dual-Target CAR-T Cells for Advanced Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT07523529",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Cyclophosphamide"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drug:fludarabine",
+            "label": "Fludarabine",
+            "entity_type": "drug",
+            "trial_count": 5,
+            "citation_count": 5,
+            "citations": [
+              {
+                "nct_id": "NCT06186401",
+                "title": "Anti-EGFRvIII synNotch Receptor Induced Anti-EphA2/IL-13Ralpha2 CAR (E-SYNC) T Cells",
+                "url": "https://clinicaltrials.gov/study/NCT06186401",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Fludarabine (non-investigational)"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06640582",
+                "title": "TIL Therapy Combined With Pembrolizumab for Advanced Brain Cancer Including Gliomas and Meningiomas",
+                "url": "https://clinicaltrials.gov/study/NCT06640582",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Fludarabine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07480941",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07480941",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Fludarabine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07523529",
+                "title": "Biomarker-Guided Dual-Target CAR-T Cells for Advanced Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT07523529",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Fludarabine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07551336",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07551336",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "value": "Fludarabine"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sponsor:jasper gerritsen",
+            "label": "Jasper Gerritsen",
+            "entity_type": "sponsor",
+            "trial_count": 5,
+            "citation_count": 5,
+            "citations": [
+              {
+                "nct_id": "NCT03861299",
+                "title": "The SAFE-Trial: Awake Craniotomy Versus Surgery Under General Anesthesia for Glioblastoma Patients.",
+                "url": "https://clinicaltrials.gov/study/NCT03861299",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Jasper Gerritsen"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06118723",
+                "title": "The SUPRAMAX Study: Supramaximal Resection Versus Maximal Resection for High-Grade Glioma Patients (ENCRAM 2201)",
+                "url": "https://clinicaltrials.gov/study/NCT06118723",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Jasper Gerritsen"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06146725",
+                "title": "The RESBIOP-study: Resection Versus Biopsy in High-grade Glioma Patients (ENCRAM 2202)",
+                "url": "https://clinicaltrials.gov/study/NCT06146725",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Jasper Gerritsen"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06146738",
+                "title": "The PALSUR-study: Palliative Care Versus Surgery in High-grade Glioma Patients (ENCRAM 2203)",
+                "url": "https://clinicaltrials.gov/study/NCT06146738",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Jasper Gerritsen"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06283927",
+                "title": "The RECSUR-study: Resection Versus Best Oncological Treatment for Recurrent Glioblastoma (ENCRAM 2302)",
+                "url": "https://clinicaltrials.gov/study/NCT06283927",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Jasper Gerritsen"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sponsor:darell bigner",
+            "label": "Darell Bigner",
+            "entity_type": "sponsor",
+            "trial_count": 4,
+            "citation_count": 4,
+            "citations": [
+              {
+                "nct_id": "NCT04547777",
+                "title": "Phase 1 Trial of D2C7-IT in Combination With 2141-V11 for Recurrent Malignant Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT04547777",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Darell Bigner"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05734560",
+                "title": "D2C7-IT and 2141-V11 in Newly Diagnosed GBM Patients",
+                "url": "https://clinicaltrials.gov/study/NCT05734560",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Darell Bigner"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06177964",
+                "title": "Lerapolturev (PVSRIPO) in GBM",
+                "url": "https://clinicaltrials.gov/study/NCT06177964",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Darell Bigner"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06455605",
+                "title": "D2C7-IT + 2141-V11 Combination Post-resection in rGBM",
+                "url": "https://clinicaltrials.gov/study/NCT06455605",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Darell Bigner"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sponsor:university of florida",
+            "label": "University of Florida",
+            "entity_type": "sponsor",
+            "trial_count": 4,
+            "citation_count": 4,
+            "citations": [
+              {
+                "nct_id": "NCT04573140",
+                "title": "A Study of RNA-lipid Particle (RNA-LP) Vaccines for Newly Diagnosed Pediatric High-Grade Gliomas (pHGG) and Adult Glioblastoma (GBM)",
+                "url": "https://clinicaltrials.gov/study/NCT04573140",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Florida"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06389591",
+                "title": "RNA-Lipid Particle (RNA-LP) Vaccines for Recurrent Adult Glioblastoma (GBM)",
+                "url": "https://clinicaltrials.gov/study/NCT06389591",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Florida"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06558214",
+                "title": "OPTIMUS PRIME: Safety and Feasibility of OPTune GIO® Integrated With MRI-gUided Laser Ablation Surgery and Pembrolizumab for Recurrent GlIoblastoMa, A randomizEd Trial",
+                "url": "https://clinicaltrials.gov/study/NCT06558214",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Florida"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07492316",
+                "title": "RNA-lipid Particle (RNA-LP) Vaccines for Recurrent/Progressive Medulloblastoma (MB)",
+                "url": "https://clinicaltrials.gov/study/NCT07492316",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Florida"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drug:cetuximab",
+            "label": "Cetuximab",
+            "entity_type": "drug",
+            "trial_count": 3,
+            "citation_count": 3,
+            "citations": [
+              {
+                "nct_id": "NCT02800486",
+                "title": "Super Selective Intra-arterial Repeated Infusion of Cetuximab (Erbitux) With Reirradiation for Treatment of Relapsed/Refractory GBM, AA, and AOA",
+                "url": "https://clinicaltrials.gov/study/NCT02800486",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Intra-arterial Cetuximab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT02861898",
+                "title": "Super-selective Intra-arterial Repeated Infusion of Cetuximab for the Treatment of Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT02861898",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Intra-arterial Cetuximab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05956821",
+                "title": "Treatment of Relapsed/Refractory Intracranial Glioma in Patients Under 22 Years of Age",
+                "url": "https://clinicaltrials.gov/study/NCT05956821",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "SIACI of cetuximab and bevacizumab"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drug:d2c7-it",
+            "label": "d2c7-it",
+            "entity_type": "drug",
+            "trial_count": 3,
+            "citation_count": 3,
+            "citations": [
+              {
+                "nct_id": "NCT04547777",
+                "title": "Phase 1 Trial of D2C7-IT in Combination With 2141-V11 for Recurrent Malignant Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT04547777",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "D2C7-IT"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05734560",
+                "title": "D2C7-IT and 2141-V11 in Newly Diagnosed GBM Patients",
+                "url": "https://clinicaltrials.gov/study/NCT05734560",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "D2C7-IT"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06455605",
+                "title": "D2C7-IT + 2141-V11 Combination Post-resection in rGBM",
+                "url": "https://clinicaltrials.gov/study/NCT06455605",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "D2C7-IT"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sponsor:beijing biotech",
+            "label": "Beijing Biotech",
+            "entity_type": "sponsor",
+            "trial_count": 3,
+            "citation_count": 3,
+            "citations": [
+              {
+                "nct_id": "NCT07480941",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07480941",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Beijing Biotech"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07523529",
+                "title": "Biomarker-Guided Dual-Target CAR-T Cells for Advanced Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT07523529",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Beijing Biotech"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07551336",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07551336",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Beijing Biotech"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sponsor:essen biotech",
+            "label": "Essen Biotech",
+            "entity_type": "sponsor",
+            "trial_count": 3,
+            "citation_count": 3,
+            "citations": [
+              {
+                "nct_id": "NCT06640582",
+                "title": "TIL Therapy Combined With Pembrolizumab for Advanced Brain Cancer Including Gliomas and Meningiomas",
+                "url": "https://clinicaltrials.gov/study/NCT06640582",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Essen Biotech"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07410494",
+                "title": "Biomarker-Guided Allogeneic Single-Target or Dual-Target CAR-NK Cell Therapy for Advanced Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT07410494",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Essen Biotech"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07410676",
+                "title": "EBNK-001 Allogeneic NK Cells With Low-Dose IL-15 ± Pembrolizumab in Advanced Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT07410676",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Essen Biotech"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sponsor:memorial sloan kettering cancer center",
+            "label": "Memorial Sloan Kettering Cancer Center",
+            "entity_type": "sponsor",
+            "trial_count": 3,
+            "citation_count": 3,
+            "citations": [
+              {
+                "nct_id": "NCT06058988",
+                "title": "Trastuzumab Deruxtecan (T-DXd) for People With Brain Cancer",
+                "url": "https://clinicaltrials.gov/study/NCT06058988",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Memorial Sloan Kettering Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06934889",
+                "title": "Study of ABBV-637 or ABBV-155 With ERAS-801 for People With Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT06934889",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Memorial Sloan Kettering Cancer Center"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07223034",
+                "title": "A Study of 177Lu-PSMA-617 in People With Gliomas",
+                "url": "https://clinicaltrials.gov/study/NCT07223034",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Memorial Sloan Kettering Cancer Center"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drug:2141-v11",
+            "label": "2141-v11",
+            "entity_type": "drug",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT04547777",
+                "title": "Phase 1 Trial of D2C7-IT in Combination With 2141-V11 for Recurrent Malignant Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT04547777",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "2141-V11"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05734560",
+                "title": "D2C7-IT and 2141-V11 in Newly Diagnosed GBM Patients",
+                "url": "https://clinicaltrials.gov/study/NCT05734560",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "2141-V11"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drug:autologous total tumor mrna",
+            "label": "Autologous Total Tumor Mrna",
+            "entity_type": "drug",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT04573140",
+                "title": "A Study of RNA-lipid Particle (RNA-LP) Vaccines for Newly Diagnosed Pediatric High-Grade Gliomas (pHGG) and Adult Glioblastoma (GBM)",
+                "url": "https://clinicaltrials.gov/study/NCT04573140",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Autologous total tumor mRNA and pp65 full length (fl) lysosomal associated membrane protein (LAMP) mRNA loaded DOTAP liposome vaccine administered intravenously (RNA loaded lipid particles, RNA-LPs)"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07492316",
+                "title": "RNA-lipid Particle (RNA-LP) Vaccines for Recurrent/Progressive Medulloblastoma (MB)",
+                "url": "https://clinicaltrials.gov/study/NCT07492316",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Autologous total tumor mRNA and pp65 full length (fl) lysosomal associated membrane protein (LAMP) mRNA loaded DOTAP liposome vaccine administered intravenously (RNA loaded lipid particles, RNA-LPs)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drug:dual-target car-nk cells",
+            "label": "Dual-target Car-nk Cells",
+            "entity_type": "drug",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT07480941",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07480941",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Dual-target CAR-NK cells"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07551336",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07551336",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Dual-target CAR-NK cells"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drug:mannitol",
+            "label": "Mannitol",
+            "entity_type": "drug",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT02800486",
+                "title": "Super Selective Intra-arterial Repeated Infusion of Cetuximab (Erbitux) With Reirradiation for Treatment of Relapsed/Refractory GBM, AA, and AOA",
+                "url": "https://clinicaltrials.gov/study/NCT02800486",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Intra-arterial Mannitol"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT02861898",
+                "title": "Super-selective Intra-arterial Repeated Infusion of Cetuximab for the Treatment of Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT02861898",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Intra-arterial Mannitol"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drug:nbm-bmx",
+            "label": "Nbm-bmx",
+            "entity_type": "drug",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT06012695",
+                "title": "NBM-BMX Administered Orally to Patients With Solid Tumors or Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT06012695",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "NBM-BMX Capsule"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07569042",
+                "title": "A Rollover Study of NBM-BMX in Combination With Temozolomide in Patients With Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT07569042",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "NBM-BMX Capsule"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "drug:pp65 full length lysosomal associated membrane protein mrna loaded dotap liposome vaccine",
+            "label": "pp65 Full Length Lysosomal Associated Membrane Protein Mrna Loaded Dotap Liposome Vaccine",
+            "entity_type": "drug",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT04573140",
+                "title": "A Study of RNA-lipid Particle (RNA-LP) Vaccines for Newly Diagnosed Pediatric High-Grade Gliomas (pHGG) and Adult Glioblastoma (GBM)",
+                "url": "https://clinicaltrials.gov/study/NCT04573140",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Autologous total tumor mRNA and pp65 full length (fl) lysosomal associated membrane protein (LAMP) mRNA loaded DOTAP liposome vaccine administered intravenously (RNA loaded lipid particles, RNA-LPs)"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07492316",
+                "title": "RNA-lipid Particle (RNA-LP) Vaccines for Recurrent/Progressive Medulloblastoma (MB)",
+                "url": "https://clinicaltrials.gov/study/NCT07492316",
+                "evidence": [
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Autologous total tumor mRNA and pp65 full length (fl) lysosomal associated membrane protein (LAMP) mRNA loaded DOTAP liposome vaccine administered intravenously (RNA loaded lipid particles, RNA-LPs)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sponsor:institute of cancer research, united kingdom",
+            "label": "Institute of Cancer Research, United Kingdom",
+            "entity_type": "sponsor",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT06630260",
+                "title": "5G-RUBY: Avutometinib and Defactinib in Malignant Brain Tumours",
+                "url": "https://clinicaltrials.gov/study/NCT06630260",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Institute of Cancer Research, United Kingdom"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07391215",
+                "title": "5G-PEARL: Paxalisib in Malignant Brain Tumours",
+                "url": "https://clinicaltrials.gov/study/NCT07391215",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Institute of Cancer Research, United Kingdom"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sponsor:novelwise pharmaceutical corporation",
+            "label": "Novelwise Pharmaceutical Corporation",
+            "entity_type": "sponsor",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT06012695",
+                "title": "NBM-BMX Administered Orally to Patients With Solid Tumors or Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT06012695",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Novelwise Pharmaceutical Corporation"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07569042",
+                "title": "A Rollover Study of NBM-BMX in Combination With Temozolomide in Patients With Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT07569042",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Novelwise Pharmaceutical Corporation"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sponsor:university of miami",
+            "label": "University of Miami",
+            "entity_type": "sponsor",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT05284643",
+                "title": "Spectroscopic MRI, Proton Therapy, and Avastin for Recurrent Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT05284643",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Miami"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05956821",
+                "title": "Treatment of Relapsed/Refractory Intracranial Glioma in Patients Under 22 Years of Age",
+                "url": "https://clinicaltrials.gov/study/NCT05956821",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Miami"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "edges": [
+          {
+            "source": "sponsor:beijing biotech",
+            "target": "drug:cyclophosphamide",
+            "trial_count": 3,
+            "citation_count": 3,
+            "citations": [
+              {
+                "nct_id": "NCT07480941",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07480941",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Beijing Biotech"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Cyclophosphamide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07523529",
+                "title": "Biomarker-Guided Dual-Target CAR-T Cells for Advanced Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT07523529",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Beijing Biotech"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Cyclophosphamide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07551336",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07551336",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Beijing Biotech"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Cyclophosphamide"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:beijing biotech",
+            "target": "drug:fludarabine",
+            "trial_count": 3,
+            "citation_count": 3,
+            "citations": [
+              {
+                "nct_id": "NCT07480941",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07480941",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Beijing Biotech"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Fludarabine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07523529",
+                "title": "Biomarker-Guided Dual-Target CAR-T Cells for Advanced Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT07523529",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Beijing Biotech"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Fludarabine"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07551336",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07551336",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Beijing Biotech"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "value": "Fludarabine"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:darell bigner",
+            "target": "drug:d2c7-it",
+            "trial_count": 3,
+            "citation_count": 3,
+            "citations": [
+              {
+                "nct_id": "NCT04547777",
+                "title": "Phase 1 Trial of D2C7-IT in Combination With 2141-V11 for Recurrent Malignant Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT04547777",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Darell Bigner"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "D2C7-IT"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05734560",
+                "title": "D2C7-IT and 2141-V11 in Newly Diagnosed GBM Patients",
+                "url": "https://clinicaltrials.gov/study/NCT05734560",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Darell Bigner"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "D2C7-IT"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT06455605",
+                "title": "D2C7-IT + 2141-V11 Combination Post-resection in rGBM",
+                "url": "https://clinicaltrials.gov/study/NCT06455605",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Darell Bigner"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "D2C7-IT"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:beijing biotech",
+            "target": "drug:dual-target car-nk cells",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT07480941",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07480941",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Beijing Biotech"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Dual-target CAR-NK cells"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07551336",
+                "title": "Dual-Targeting CAR-NK Cells for Recurrent/Progressive Glioblastoma and High-Grade Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT07551336",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Beijing Biotech"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Dual-target CAR-NK cells"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:darell bigner",
+            "target": "drug:2141-v11",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT04547777",
+                "title": "Phase 1 Trial of D2C7-IT in Combination With 2141-V11 for Recurrent Malignant Glioma",
+                "url": "https://clinicaltrials.gov/study/NCT04547777",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Darell Bigner"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "2141-V11"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05734560",
+                "title": "D2C7-IT and 2141-V11 in Newly Diagnosed GBM Patients",
+                "url": "https://clinicaltrials.gov/study/NCT05734560",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Darell Bigner"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "2141-V11"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:essen biotech",
+            "target": "drug:pembrolizumab",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT06640582",
+                "title": "TIL Therapy Combined With Pembrolizumab for Advanced Brain Cancer Including Gliomas and Meningiomas",
+                "url": "https://clinicaltrials.gov/study/NCT06640582",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Essen Biotech"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[4].name",
+                    "value": "Pembrolizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07410676",
+                "title": "EBNK-001 Allogeneic NK Cells With Low-Dose IL-15 ± Pembrolizumab in Advanced Solid Tumors",
+                "url": "https://clinicaltrials.gov/study/NCT07410676",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Essen Biotech"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "EBNK-001 + IL-15 + Pembrolizumab"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:institute of cancer research, united kingdom",
+            "target": "drug:temozolomide",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT06630260",
+                "title": "5G-RUBY: Avutometinib and Defactinib in Malignant Brain Tumours",
+                "url": "https://clinicaltrials.gov/study/NCT06630260",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Institute of Cancer Research, United Kingdom"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Temozolomide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07391215",
+                "title": "5G-PEARL: Paxalisib in Malignant Brain Tumours",
+                "url": "https://clinicaltrials.gov/study/NCT07391215",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Institute of Cancer Research, United Kingdom"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Temozolomide capsule"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:mayo clinic",
+            "target": "drug:pembrolizumab",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT05465954",
+                "title": "Efineptakin Alfa and Pembrolizumab for the Treatment of Recurrent Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT05465954",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Mayo Clinic"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Pembrolizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07301268",
+                "title": "GI-102 Alone or With Pembrolizumab Before Surgery for Treatment of Recurrent or Progressive IDH Wildtype Glioblastoma and IDH Mutated Grade 4 Astrocytoma",
+                "url": "https://clinicaltrials.gov/study/NCT07301268",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Mayo Clinic"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[6].name",
+                    "value": "Pembrolizumab"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:memorial sloan kettering cancer center",
+            "target": "drug:temozolomide",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT06934889",
+                "title": "Study of ABBV-637 or ABBV-155 With ERAS-801 for People With Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT06934889",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Memorial Sloan Kettering Cancer Center"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "value": "Temozolomide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07223034",
+                "title": "A Study of 177Lu-PSMA-617 in People With Gliomas",
+                "url": "https://clinicaltrials.gov/study/NCT07223034",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Memorial Sloan Kettering Cancer Center"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Temozolomide"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:northwell health",
+            "target": "drug:bevacizumab",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT01269853",
+                "title": "Repeated Super-selective Intraarterial Cerebral Infusion of Bevacizumab (Avastin) for Treatment of Relapsed GBM and AA",
+                "url": "https://clinicaltrials.gov/study/NCT01269853",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Bevacizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05271240",
+                "title": "Repeated Superselective Intraarterial Cerebral Infusion (SIACI) of Bevacizumab With Temozolomide and Radiation Compared to Temozolomide and Radiation Alone in Newly Diagnosed GBM",
+                "url": "https://clinicaltrials.gov/study/NCT05271240",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Repeated Superselective Intraarterial Cerebral infusion (SIACI) of Bevacizumab (Avastin) with Temozolomide and Radiation"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:northwell health",
+            "target": "drug:cetuximab",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT02800486",
+                "title": "Super Selective Intra-arterial Repeated Infusion of Cetuximab (Erbitux) With Reirradiation for Treatment of Relapsed/Refractory GBM, AA, and AOA",
+                "url": "https://clinicaltrials.gov/study/NCT02800486",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Intra-arterial Cetuximab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT02861898",
+                "title": "Super-selective Intra-arterial Repeated Infusion of Cetuximab for the Treatment of Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT02861898",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Intra-arterial Cetuximab"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:northwell health",
+            "target": "drug:mannitol",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT02800486",
+                "title": "Super Selective Intra-arterial Repeated Infusion of Cetuximab (Erbitux) With Reirradiation for Treatment of Relapsed/Refractory GBM, AA, and AOA",
+                "url": "https://clinicaltrials.gov/study/NCT02800486",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Intra-arterial Mannitol"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT02861898",
+                "title": "Super-selective Intra-arterial Repeated Infusion of Cetuximab for the Treatment of Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT02861898",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Intra-arterial Mannitol"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:northwell health",
+            "target": "drug:temozolomide",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT03213002",
+                "title": "Oral Capecitabine and Temozolomide (CAPTEM) for Newly Diagnosed GBM",
+                "url": "https://clinicaltrials.gov/study/NCT03213002",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Temozolomide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05271240",
+                "title": "Repeated Superselective Intraarterial Cerebral Infusion (SIACI) of Bevacizumab With Temozolomide and Radiation Compared to Temozolomide and Radiation Alone in Newly Diagnosed GBM",
+                "url": "https://clinicaltrials.gov/study/NCT05271240",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Northwell Health"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Repeated Superselective Intraarterial Cerebral infusion (SIACI) of Bevacizumab (Avastin) with Temozolomide and Radiation"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:novelwise pharmaceutical corporation",
+            "target": "drug:nbm-bmx",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT06012695",
+                "title": "NBM-BMX Administered Orally to Patients With Solid Tumors or Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT06012695",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Novelwise Pharmaceutical Corporation"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "NBM-BMX Capsule"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07569042",
+                "title": "A Rollover Study of NBM-BMX in Combination With Temozolomide in Patients With Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT07569042",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Novelwise Pharmaceutical Corporation"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "NBM-BMX Capsule"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:novelwise pharmaceutical corporation",
+            "target": "drug:temozolomide",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT06012695",
+                "title": "NBM-BMX Administered Orally to Patients With Solid Tumors or Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT06012695",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Novelwise Pharmaceutical Corporation"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Temozolomide"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07569042",
+                "title": "A Rollover Study of NBM-BMX in Combination With Temozolomide in Patients With Newly Diagnosed Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT07569042",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Novelwise Pharmaceutical Corporation"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Temozolomide"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:university of florida",
+            "target": "drug:autologous total tumor mrna",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT04573140",
+                "title": "A Study of RNA-lipid Particle (RNA-LP) Vaccines for Newly Diagnosed Pediatric High-Grade Gliomas (pHGG) and Adult Glioblastoma (GBM)",
+                "url": "https://clinicaltrials.gov/study/NCT04573140",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Florida"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Autologous total tumor mRNA and pp65 full length (fl) lysosomal associated membrane protein (LAMP) mRNA loaded DOTAP liposome vaccine administered intravenously (RNA loaded lipid particles, RNA-LPs)"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07492316",
+                "title": "RNA-lipid Particle (RNA-LP) Vaccines for Recurrent/Progressive Medulloblastoma (MB)",
+                "url": "https://clinicaltrials.gov/study/NCT07492316",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Florida"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Autologous total tumor mRNA and pp65 full length (fl) lysosomal associated membrane protein (LAMP) mRNA loaded DOTAP liposome vaccine administered intravenously (RNA loaded lipid particles, RNA-LPs)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:university of florida",
+            "target": "drug:pp65 full length lysosomal associated membrane protein mrna loaded dotap liposome vaccine",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT04573140",
+                "title": "A Study of RNA-lipid Particle (RNA-LP) Vaccines for Newly Diagnosed Pediatric High-Grade Gliomas (pHGG) and Adult Glioblastoma (GBM)",
+                "url": "https://clinicaltrials.gov/study/NCT04573140",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Florida"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Autologous total tumor mRNA and pp65 full length (fl) lysosomal associated membrane protein (LAMP) mRNA loaded DOTAP liposome vaccine administered intravenously (RNA loaded lipid particles, RNA-LPs)"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT07492316",
+                "title": "RNA-lipid Particle (RNA-LP) Vaccines for Recurrent/Progressive Medulloblastoma (MB)",
+                "url": "https://clinicaltrials.gov/study/NCT07492316",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Florida"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Autologous total tumor mRNA and pp65 full length (fl) lysosomal associated membrane protein (LAMP) mRNA loaded DOTAP liposome vaccine administered intravenously (RNA loaded lipid particles, RNA-LPs)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:university of miami",
+            "target": "drug:bevacizumab",
+            "trial_count": 2,
+            "citation_count": 2,
+            "citations": [
+              {
+                "nct_id": "NCT05284643",
+                "title": "Spectroscopic MRI, Proton Therapy, and Avastin for Recurrent Glioblastoma",
+                "url": "https://clinicaltrials.gov/study/NCT05284643",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Miami"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Bevacizumab"
+                  }
+                ]
+              },
+              {
+                "nct_id": "NCT05956821",
+                "title": "Treatment of Relapsed/Refractory Intracranial Glioma in Patients Under 22 Years of Age",
+                "url": "https://clinicaltrials.gov/study/NCT05956821",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Miami"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "SIACI of cetuximab and bevacizumab"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:essen biotech",
+            "target": "drug:cyclophosphamide",
+            "trial_count": 1,
+            "citation_count": 1,
+            "citations": [
+              {
+                "nct_id": "NCT06640582",
+                "title": "TIL Therapy Combined With Pembrolizumab for Advanced Brain Cancer Including Gliomas and Meningiomas",
+                "url": "https://clinicaltrials.gov/study/NCT06640582",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Essen Biotech"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Cyclophosphamide"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:essen biotech",
+            "target": "drug:fludarabine",
+            "trial_count": 1,
+            "citation_count": 1,
+            "citations": [
+              {
+                "nct_id": "NCT06640582",
+                "title": "TIL Therapy Combined With Pembrolizumab for Advanced Brain Cancer Including Gliomas and Meningiomas",
+                "url": "https://clinicaltrials.gov/study/NCT06640582",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Essen Biotech"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[2].name",
+                    "value": "Fludarabine"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:jasper gerritsen",
+            "target": "drug:temozolomide",
+            "trial_count": 1,
+            "citation_count": 1,
+            "citations": [
+              {
+                "nct_id": "NCT06283927",
+                "title": "The RECSUR-study: Resection Versus Best Oncological Treatment for Recurrent Glioblastoma (ENCRAM 2302)",
+                "url": "https://clinicaltrials.gov/study/NCT06283927",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Jasper Gerritsen"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[1].name",
+                    "value": "Temozolomide"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:m.d. anderson cancer center",
+            "target": "drug:temozolomide",
+            "trial_count": 1,
+            "citation_count": 1,
+            "citations": [
+              {
+                "nct_id": "NCT04623931",
+                "title": "Chemotherapy and Radiation Therapy for the Treatment of IDH Wildtype Gliomas or Non-histological (Molecular) Glioblastomas",
+                "url": "https://clinicaltrials.gov/study/NCT04623931",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "M.D. Anderson Cancer Center"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[3].name",
+                    "value": "Temozolomide"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:mayo clinic",
+            "target": "drug:bevacizumab",
+            "trial_count": 1,
+            "citation_count": 1,
+            "citations": [
+              {
+                "nct_id": "NCT07074756",
+                "title": "A Digital Treatment Platform for the Delivery of Home-Based Sequential Therapy in Patients With Glioma, GHoST Trial",
+                "url": "https://clinicaltrials.gov/study/NCT07074756",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "Mayo Clinic"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[9].name",
+                    "value": "Bevacizumab"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:university of florida",
+            "target": "drug:pembrolizumab",
+            "trial_count": 1,
+            "citation_count": 1,
+            "citations": [
+              {
+                "nct_id": "NCT06558214",
+                "title": "OPTIMUS PRIME: Safety and Feasibility of OPTune GIO® Integrated With MRI-gUided Laser Ablation Surgery and Pembrolizumab for Recurrent GlIoblastoMa, A randomizEd Trial",
+                "url": "https://clinicaltrials.gov/study/NCT06558214",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Florida"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "Pembrolizumab"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "source": "sponsor:university of miami",
+            "target": "drug:cetuximab",
+            "trial_count": 1,
+            "citation_count": 1,
+            "citations": [
+              {
+                "nct_id": "NCT05956821",
+                "title": "Treatment of Relapsed/Refractory Intracranial Glioma in Patients Under 22 Years of Age",
+                "url": "https://clinicaltrials.gov/study/NCT05956821",
+                "evidence": [
+                  {
+                    "field": "protocolSection.sponsorCollaboratorsModule.leadSponsor.name",
+                    "value": "University of Miami"
+                  },
+                  {
+                    "field": "protocolSection.armsInterventionsModule.interventions[0].name",
+                    "value": "SIACI of cetuximab and bevacizumab"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "meta": {
+      "source": "ClinicalTrials.gov API v2",
+      "api_version": "2.0.5",
+      "data_timestamp": "2026-09-25T09:00:04",
+      "query": "Show a network of sponsors and drugs for recruiting glioblastoma trials.",
+      "planner": {
+        "method": "llm",
+        "model": "gpt-5.4-mini",
+        "fallback_reason": null,
+        "plan": {
+          "analysis": "network",
+          "filters": {
+            "drug": null,
+            "condition": "glioblastoma",
+            "sponsor": null,
+            "country": null,
+            "phases": [],
+            "statuses": [
+              "RECRUITING"
+            ],
+            "study_type": null,
+            "start_year": null,
+            "end_year": null
+          },
+          "group_by": null,
+          "series_by": null,
+          "compare": null,
+          "network": {
+            "source": "sponsor",
+            "target": "drug",
+            "top_n_nodes": 25,
+            "min_edge_weight": 1
+          },
+          "numeric": null,
+          "top_n": null,
+          "rationale": "The user asked for a sponsor-drug network limited to recruiting glioblastoma trials."
+        },
+        "overrides": [],
+        "adjustments": []
+      },
+      "filters_applied": {
+        "condition": "glioblastoma",
+        "statuses": [
+          "RECRUITING"
+        ]
+      },
+      "cohorts": [
+        {
+          "label": "glioblastoma",
+          "api_total": 328,
+          "fetched": 328,
+          "analyzed": 328,
+          "excluded": 0,
+          "excluded_nct_ids": [],
+          "truncated": false
+        }
+      ],
+      "units": "trials",
+      "time_granularity": null,
+      "counting_rules": [
+        "Sponsors are grouped by exact lead-sponsor name (case-insensitive); subsidiaries are not merged.",
+        "Drug names are normalized (brand/code names mapped to generics, doses and placebos removed, combinations split); a trial counts once per drug.",
+        "Edge weight = number of trials linking the sponsor and the drug.",
+        "Node size (trial_count) = number of analyzed trials mentioning the entity, including trials whose edges were filtered out.",
+        "Edges supported by fewer than 1 trials are hidden."
+      ],
+      "warnings": [
+        "Showing 25 of 420 connected entities (strongest links first, top_n_nodes=25)."
+      ],
+      "api_requests": [
+        "https://clinicaltrials.gov/api/v2/studies?countTotal=true&fields=BriefTitle%2CInterventionName%2CInterventionOtherName%2CInterventionType%2CLeadSponsorName%2CNCTId&filter.overallStatus=RECRUITING&format=json&pageSize=1000&query.cond=glioblastoma"
+      ],
+      "generated_at": "2026-09-27T20:17:25.671821Z"
+    }
+  }
+}

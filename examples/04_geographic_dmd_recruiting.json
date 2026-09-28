@@ -1,0 +1,1048 @@
+{
+  "request": {
+    "query": "Which countries have the most recruiting trials for Duchenne muscular dystrophy?"
+  },
+  "response": {
+    "visualization": {
+      "type": "bar_chart",
+      "title": "Trials by country: Duchenne muscular dystrophy; recruiting",
+      "subtitle": "59 trials analyzed",
+      "encoding": {
+        "x": {
+          "field": "country",
+          "type": "nominal",
+          "title": "Country",
+          "unit": null,
+          "sort": [
+            "United States",
+            "Belgium",
+            "Italy",
+            "United Kingdom",
+            "France",
+            "Spain",
+            "China",
+            "Canada",
+            "Netherlands",
+            "Turkey (Türkiye)",
+            "Australia",
+            "Germany",
+            "South Korea",
+            "Belarus",
+            "Denmark"
+          ]
+        },
+        "y": {
+          "field": "trial_count",
+          "type": "quantitative",
+          "title": "Number of trials",
+          "unit": "trials",
+          "sort": null
+        },
+        "series": null,
+        "tooltip": [
+          "country",
+          "trial_count"
+        ]
+      },
+      "data": [
+        {
+          "country": "United States",
+          "trial_count": 27,
+          "citation_count": 27,
+          "citations": [
+            {
+              "nct_id": "NCT00390104",
+              "title": "Molecular Analysis of Patients With Neuromuscular Disease",
+              "url": "https://clinicaltrials.gov/study/NCT00390104",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "United States"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT01484678",
+              "title": "Magnetic Resonance Imaging and Biomarkers for Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT01484678",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "United States"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT02069756",
+              "title": "The Duchenne Registry",
+              "url": "https://clinicaltrials.gov/study/NCT02069756",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "United States"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04626674",
+              "title": "A Gene Transfer Therapy Study to Evaluate the Safety of and Expression From Delandistrogene Moxeparvovec (SRP-9001) in Participants With Duchenne Muscular Dystrophy (DMD) - Non-Ambulatory Cohort",
+              "url": "https://clinicaltrials.gov/study/NCT04626674",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "United States"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04906460",
+              "title": "Open-label Study of WVE-N531 in Patients With Duchenne Muscular Dystrophy (FORWARD-53)",
+              "url": "https://clinicaltrials.gov/study/NCT04906460",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "United States"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05016908",
+              "title": "Extracellular RNA Biomarkers of Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT05016908",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[1].country",
+                  "value": "United States"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05019625",
+              "title": "Biomarker Development for Muscular Dystrophies",
+              "url": "https://clinicaltrials.gov/study/NCT05019625",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[1].country",
+                  "value": "United States"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05412394",
+              "title": "Once Weekly Infant Corticosteroid Trial for DMD",
+              "url": "https://clinicaltrials.gov/study/NCT05412394",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "United States"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06093100",
+              "title": "Wearable Technology to Evaluate Hyperglycemia and HRV in DMD - Longitudinal Aim",
+              "url": "https://clinicaltrials.gov/study/NCT06093100",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "United States"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06124196",
+              "title": "Wearable Technology to Evaluate Hyperglycemia and HRV in DMD",
+              "url": "https://clinicaltrials.gov/study/NCT06124196",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "United States"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "Belgium",
+          "trial_count": 10,
+          "citation_count": 10,
+          "citations": [
+            {
+              "nct_id": "NCT03882827",
+              "title": "Natural History of Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT03882827",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Belgium"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05933057",
+              "title": "Efficacy, Safety and Tolerability of Givinostat in Non-ambulant Patients With Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT05933057",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Belgium"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05982119",
+              "title": "Assessments in Patients With Muscular Pathology and in Control Subjects : The ActiLiège Next Study",
+              "url": "https://clinicaltrials.gov/study/NCT05982119",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Belgium"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06769633",
+              "title": "Pharmacokinetics and Safety of Givinostat in DMD Patients Ages From at Least 2 Years to Less Then 6 Years Old",
+              "url": "https://clinicaltrials.gov/study/NCT06769633",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Belgium"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06773988",
+              "title": "Follow-up of NIV At Home in Patients with Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT06773988",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Belgium"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07037862",
+              "title": "A Study in Participants With Duchenne Muscular Dystrophy Amenable to Exon 44 Skipping to Evaluate the Safety and Efficacy of ENTR-601-44",
+              "url": "https://clinicaltrials.gov/study/NCT07037862",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Belgium"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07038824",
+              "title": "A Study in Participants With Duchenne Muscular Dystrophy Amenable to Exon 45 Skipping to Evaluate the Safety and Efficacy of ENTR-601-45",
+              "url": "https://clinicaltrials.gov/study/NCT07038824",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Belgium"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07286565",
+              "title": "Active NBS Study: Decentralised Monitoring Motor Development in Children With Duchenne Muscular Dystrophy or Spinal Muscular Atrophy Identified by Newborn Screening",
+              "url": "https://clinicaltrials.gov/study/NCT07286565",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Belgium"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07287189",
+              "title": "Phase 2 Study of SAT-3247 in Pediatric Ambulatory Patients",
+              "url": "https://clinicaltrials.gov/study/NCT07287189",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[9].country",
+                  "value": "Belgium"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07587242",
+              "title": "A Phase 3 Study to Evaluate the Safety and Efficacy of AOC 1044 (Also Referred to as Delpacibart Zotadirsen) in Participants With DMD With Gene Mutations Amenable to Exon 44 Skipping",
+              "url": "https://clinicaltrials.gov/study/NCT07587242",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Belgium"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "Italy",
+          "trial_count": 9,
+          "citation_count": 9,
+          "citations": [
+            {
+              "nct_id": "NCT03373968",
+              "title": "Givinostat in Duchenne's Muscular Dystrophy Long-term Safety and Tolerability Study",
+              "url": "https://clinicaltrials.gov/study/NCT03373968",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[21].country",
+                  "value": "Italy"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05933057",
+              "title": "Efficacy, Safety and Tolerability of Givinostat in Non-ambulant Patients With Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT05933057",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[13].country",
+                  "value": "Italy"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06138639",
+              "title": "A Study of SGT-003 Gene Therapy in Duchenne Muscular Dystrophy (INSPIRE DUCHENNE)",
+              "url": "https://clinicaltrials.gov/study/NCT06138639",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[13].country",
+                  "value": "Italy"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06366815",
+              "title": "phenotypeS in Non Ambulant Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT06366815",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Italy"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06769633",
+              "title": "Pharmacokinetics and Safety of Givinostat in DMD Patients Ages From at Least 2 Years to Less Then 6 Years Old",
+              "url": "https://clinicaltrials.gov/study/NCT06769633",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[1].country",
+                  "value": "Italy"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07037862",
+              "title": "A Study in Participants With Duchenne Muscular Dystrophy Amenable to Exon 44 Skipping to Evaluate the Safety and Efficacy of ENTR-601-44",
+              "url": "https://clinicaltrials.gov/study/NCT07037862",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[3].country",
+                  "value": "Italy"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07038824",
+              "title": "A Study in Participants With Duchenne Muscular Dystrophy Amenable to Exon 45 Skipping to Evaluate the Safety and Efficacy of ENTR-601-45",
+              "url": "https://clinicaltrials.gov/study/NCT07038824",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[3].country",
+                  "value": "Italy"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07129954",
+              "title": "Fear of Falling in Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT07129954",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Italy"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07587242",
+              "title": "A Phase 3 Study to Evaluate the Safety and Efficacy of AOC 1044 (Also Referred to as Delpacibart Zotadirsen) in Participants With DMD With Gene Mutations Amenable to Exon 44 Skipping",
+              "url": "https://clinicaltrials.gov/study/NCT07587242",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[7].country",
+                  "value": "Italy"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "United Kingdom",
+          "trial_count": 9,
+          "citation_count": 9,
+          "citations": [
+            {
+              "nct_id": "NCT03882827",
+              "title": "Natural History of Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT03882827",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[13].country",
+                  "value": "United Kingdom"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT04906460",
+              "title": "Open-label Study of WVE-N531 in Patients With Duchenne Muscular Dystrophy (FORWARD-53)",
+              "url": "https://clinicaltrials.gov/study/NCT04906460",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[4].country",
+                  "value": "United Kingdom"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06138639",
+              "title": "A Study of SGT-003 Gene Therapy in Duchenne Muscular Dystrophy (INSPIRE DUCHENNE)",
+              "url": "https://clinicaltrials.gov/study/NCT06138639",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[14].country",
+                  "value": "United Kingdom"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06769633",
+              "title": "Pharmacokinetics and Safety of Givinostat in DMD Patients Ages From at Least 2 Years to Less Then 6 Years Old",
+              "url": "https://clinicaltrials.gov/study/NCT06769633",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[7].country",
+                  "value": "United Kingdom"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07037862",
+              "title": "A Study in Participants With Duchenne Muscular Dystrophy Amenable to Exon 44 Skipping to Evaluate the Safety and Efficacy of ENTR-601-44",
+              "url": "https://clinicaltrials.gov/study/NCT07037862",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[8].country",
+                  "value": "United Kingdom"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07038824",
+              "title": "A Study in Participants With Duchenne Muscular Dystrophy Amenable to Exon 45 Skipping to Evaluate the Safety and Efficacy of ENTR-601-45",
+              "url": "https://clinicaltrials.gov/study/NCT07038824",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[10].country",
+                  "value": "United Kingdom"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07287189",
+              "title": "Phase 2 Study of SAT-3247 in Pediatric Ambulatory Patients",
+              "url": "https://clinicaltrials.gov/study/NCT07287189",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[20].country",
+                  "value": "United Kingdom"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07423026",
+              "title": "A Remote Study Using Technology to Assess Outcomes in DMD",
+              "url": "https://clinicaltrials.gov/study/NCT07423026",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "United Kingdom"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07587242",
+              "title": "A Phase 3 Study to Evaluate the Safety and Efficacy of AOC 1044 (Also Referred to as Delpacibart Zotadirsen) in Participants With DMD With Gene Mutations Amenable to Exon 44 Skipping",
+              "url": "https://clinicaltrials.gov/study/NCT07587242",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[13].country",
+                  "value": "United Kingdom"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "France",
+          "trial_count": 7,
+          "citation_count": 7,
+          "citations": [
+            {
+              "nct_id": "NCT03882827",
+              "title": "Natural History of Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT03882827",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[3].country",
+                  "value": "France"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05933057",
+              "title": "Efficacy, Safety and Tolerability of Givinostat in Non-ambulant Patients With Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT05933057",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[6].country",
+                  "value": "France"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06147414",
+              "title": "Development of Non-Invasive Prenatal Diagnosis for Single Gene Disorders",
+              "url": "https://clinicaltrials.gov/study/NCT06147414",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "France"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06833489",
+              "title": "Transcriptomic Analysis to Put an End to Misdiagnosis in Patients With Rare Muscle Diseases",
+              "url": "https://clinicaltrials.gov/study/NCT06833489",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "France"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07378553",
+              "title": "Multiparametric Ultrafast Ultrasound Biomarkers for Duchenne and Becker Muscular Dystrophies",
+              "url": "https://clinicaltrials.gov/study/NCT07378553",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "France"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07415837",
+              "title": "Evaluation of the Role of miR-1 in the Pathogenesis and as a Biomarker in Muscular Dystrophies and Congenital Myopathies",
+              "url": "https://clinicaltrials.gov/study/NCT07415837",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "France"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07587242",
+              "title": "A Phase 3 Study to Evaluate the Safety and Efficacy of AOC 1044 (Also Referred to as Delpacibart Zotadirsen) in Participants With DMD With Gene Mutations Amenable to Exon 44 Skipping",
+              "url": "https://clinicaltrials.gov/study/NCT07587242",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[2].country",
+                  "value": "France"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "Spain",
+          "trial_count": 7,
+          "citation_count": 7,
+          "citations": [
+            {
+              "nct_id": "NCT03373968",
+              "title": "Givinostat in Duchenne's Muscular Dystrophy Long-term Safety and Tolerability Study",
+              "url": "https://clinicaltrials.gov/study/NCT03373968",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[32].country",
+                  "value": "Spain"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT03882827",
+              "title": "Natural History of Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT03882827",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[11].country",
+                  "value": "Spain"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT05933057",
+              "title": "Efficacy, Safety and Tolerability of Givinostat in Non-ambulant Patients With Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT05933057",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[23].country",
+                  "value": "Spain"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07037862",
+              "title": "A Study in Participants With Duchenne Muscular Dystrophy Amenable to Exon 44 Skipping to Evaluate the Safety and Efficacy of ENTR-601-44",
+              "url": "https://clinicaltrials.gov/study/NCT07037862",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[6].country",
+                  "value": "Spain"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07038824",
+              "title": "A Study in Participants With Duchenne Muscular Dystrophy Amenable to Exon 45 Skipping to Evaluate the Safety and Efficacy of ENTR-601-45",
+              "url": "https://clinicaltrials.gov/study/NCT07038824",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[8].country",
+                  "value": "Spain"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07287189",
+              "title": "Phase 2 Study of SAT-3247 in Pediatric Ambulatory Patients",
+              "url": "https://clinicaltrials.gov/study/NCT07287189",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[18].country",
+                  "value": "Spain"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07587242",
+              "title": "A Phase 3 Study to Evaluate the Safety and Efficacy of AOC 1044 (Also Referred to as Delpacibart Zotadirsen) in Participants With DMD With Gene Mutations Amenable to Exon 44 Skipping",
+              "url": "https://clinicaltrials.gov/study/NCT07587242",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[10].country",
+                  "value": "Spain"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "China",
+          "trial_count": 5,
+          "citation_count": 5,
+          "citations": [
+            {
+              "nct_id": "NCT04012671",
+              "title": "A Registered Cohort Study on Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT04012671",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "China"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06641895",
+              "title": "Evaluation of the Safety and Efficacy of BBM-D101 to Treat Patients with Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT06641895",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "China"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06900049",
+              "title": "Evaluation of the Safety, Tolerability, and Efficacy of LE051 in Patients With Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT06900049",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "China"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07058662",
+              "title": "A Clinical Study to Evaluate the Safety, Tolerability, and Efficacy of BBM-D101 in the Treatment of Duchenne Muscular Dystrophy.",
+              "url": "https://clinicaltrials.gov/study/NCT07058662",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "China"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07188012",
+              "title": "Safety and Dystrophin Expression of SPOT-03 in Duchenne Muscular Dystrophy (DMD) Patients",
+              "url": "https://clinicaltrials.gov/study/NCT07188012",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "China"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "Canada",
+          "trial_count": 4,
+          "citation_count": 4,
+          "citations": [
+            {
+              "nct_id": "NCT05933057",
+              "title": "Efficacy, Safety and Tolerability of Givinostat in Non-ambulant Patients With Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT05933057",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[1].country",
+                  "value": "Canada"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06138639",
+              "title": "A Study of SGT-003 Gene Therapy in Duchenne Muscular Dystrophy (INSPIRE DUCHENNE)",
+              "url": "https://clinicaltrials.gov/study/NCT06138639",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[12].country",
+                  "value": "Canada"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07160634",
+              "title": "A Study of SGT-003 Gene Therapy in Ambulant Males With Duchenne Muscular Dystrophy (IMPACT DUCHENNE)",
+              "url": "https://clinicaltrials.gov/study/NCT07160634",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[4].country",
+                  "value": "Canada"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07287189",
+              "title": "Phase 2 Study of SAT-3247 in Pediatric Ambulatory Patients",
+              "url": "https://clinicaltrials.gov/study/NCT07287189",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[11].country",
+                  "value": "Canada"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "Netherlands",
+          "trial_count": 3,
+          "citation_count": 3,
+          "citations": [
+            {
+              "nct_id": "NCT05933057",
+              "title": "Efficacy, Safety and Tolerability of Givinostat in Non-ambulant Patients With Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT05933057",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[18].country",
+                  "value": "Netherlands"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06769633",
+              "title": "Pharmacokinetics and Safety of Givinostat in DMD Patients Ages From at Least 2 Years to Less Then 6 Years Old",
+              "url": "https://clinicaltrials.gov/study/NCT06769633",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[4].country",
+                  "value": "Netherlands"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07038824",
+              "title": "A Study in Participants With Duchenne Muscular Dystrophy Amenable to Exon 45 Skipping to Evaluate the Safety and Efficacy of ENTR-601-45",
+              "url": "https://clinicaltrials.gov/study/NCT07038824",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[6].country",
+                  "value": "Netherlands"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "Turkey (Türkiye)",
+          "trial_count": 3,
+          "citation_count": 3,
+          "citations": [
+            {
+              "nct_id": "NCT06402942",
+              "title": "Gamified Occupational Therapy for Adolescents With Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT06402942",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Turkey (Türkiye)"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT06756633",
+              "title": "Respiratory Functions, Thoracoabdominal Movements and Exercise Capacity in Neuromuscular Diseases",
+              "url": "https://clinicaltrials.gov/study/NCT06756633",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Turkey (Türkiye)"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07039799",
+              "title": "The Effect of Virtual Reality Applications on Upper Extremity Functions in Patients With Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT07039799",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Turkey (Türkiye)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "Australia",
+          "trial_count": 2,
+          "citation_count": 2,
+          "citations": [
+            {
+              "nct_id": "NCT07160634",
+              "title": "A Study of SGT-003 Gene Therapy in Ambulant Males With Duchenne Muscular Dystrophy (IMPACT DUCHENNE)",
+              "url": "https://clinicaltrials.gov/study/NCT07160634",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[3].country",
+                  "value": "Australia"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07287189",
+              "title": "Phase 2 Study of SAT-3247 in Pediatric Ambulatory Patients",
+              "url": "https://clinicaltrials.gov/study/NCT07287189",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[7].country",
+                  "value": "Australia"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "Germany",
+          "trial_count": 2,
+          "citation_count": 2,
+          "citations": [
+            {
+              "nct_id": "NCT05933057",
+              "title": "Efficacy, Safety and Tolerability of Givinostat in Non-ambulant Patients With Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT05933057",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[9].country",
+                  "value": "Germany"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07587242",
+              "title": "A Phase 3 Study to Evaluate the Safety and Efficacy of AOC 1044 (Also Referred to as Delpacibart Zotadirsen) in Participants With DMD With Gene Mutations Amenable to Exon 44 Skipping",
+              "url": "https://clinicaltrials.gov/study/NCT07587242",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[4].country",
+                  "value": "Germany"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "South Korea",
+          "trial_count": 2,
+          "citation_count": 2,
+          "citations": [
+            {
+              "nct_id": "NCT06755138",
+              "title": "Research on the Relationship Between Scoliosis, Pain, Quality of Life, and Trunk Muscle Compensation Patterns Among Patients with Duchenne Muscular Dystrophy.",
+              "url": "https://clinicaltrials.gov/study/NCT06755138",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "South Korea"
+                }
+              ]
+            },
+            {
+              "nct_id": "NCT07015632",
+              "title": "ML-Based Multi-Sensor Fall Risk Screening in DMD",
+              "url": "https://clinicaltrials.gov/study/NCT07015632",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "South Korea"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "Belarus",
+          "trial_count": 1,
+          "citation_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT07673809",
+              "title": "A Study to Evaluate the Tolerability, Safety and Efficacy of GNR-097 Gene Therapy in Pediatric Patients With Duchenne Muscular Dystrophy",
+              "url": "https://clinicaltrials.gov/study/NCT07673809",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Belarus"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "Denmark",
+          "trial_count": 1,
+          "citation_count": 1,
+          "citations": [
+            {
+              "nct_id": "NCT07467187",
+              "title": "Invasive Home Ventilation in Denmark",
+              "url": "https://clinicaltrials.gov/study/NCT07467187",
+              "evidence": [
+                {
+                  "field": "protocolSection.contactsLocationsModule.locations[0].country",
+                  "value": "Denmark"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "meta": {
+      "source": "ClinicalTrials.gov API v2",
+      "api_version": "2.0.5",
+      "data_timestamp": "2026-09-25T09:00:04",
+      "query": "Which countries have the most recruiting trials for Duchenne muscular dystrophy?",
+      "planner": {
+        "method": "llm",
+        "model": "gpt-5.4-mini",
+        "fallback_reason": null,
+        "plan": {
+          "analysis": "distribution",
+          "filters": {
+            "drug": null,
+            "condition": "Duchenne muscular dystrophy",
+            "sponsor": null,
+            "country": null,
+            "phases": [],
+            "statuses": [
+              "RECRUITING"
+            ],
+            "study_type": null,
+            "start_year": null,
+            "end_year": null
+          },
+          "group_by": "country",
+          "series_by": null,
+          "compare": null,
+          "network": null,
+          "numeric": null,
+          "top_n": null,
+          "rationale": "Count recruiting Duchenne muscular dystrophy trials by country to identify the countries with the most trials."
+        },
+        "overrides": [],
+        "adjustments": []
+      },
+      "filters_applied": {
+        "condition": "Duchenne muscular dystrophy",
+        "statuses": [
+          "RECRUITING"
+        ]
+      },
+      "cohorts": [
+        {
+          "label": "Duchenne muscular dystrophy",
+          "api_total": 59,
+          "fetched": 59,
+          "analyzed": 59,
+          "excluded": 0,
+          "excluded_nct_ids": [],
+          "truncated": false
+        }
+      ],
+      "units": "trials",
+      "time_granularity": null,
+      "counting_rules": [
+        "A trial counts once per country in which it has at least one site (not once per site).",
+        "Because a trial can fall into several categories, bar heights can sum to more than the number of trials.",
+        "Only sites whose own status is RECRUITING count toward a country."
+      ],
+      "warnings": [
+        "Showing the top 15 of 23 country categories."
+      ],
+      "api_requests": [
+        "https://clinicaltrials.gov/api/v2/studies?countTotal=true&fields=BriefTitle%2CLocationCountry%2CLocationStatus%2CNCTId&filter.overallStatus=RECRUITING&format=json&pageSize=1000&query.cond=Duchenne+muscular+dystrophy"
+      ],
+      "generated_at": "2026-09-27T20:17:23.618096Z"
+    }
+  }
+}

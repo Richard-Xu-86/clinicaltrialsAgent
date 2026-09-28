@@ -1,0 +1,41 @@
+[
+  {
+    "name": "01_trend_tirzepatide",
+    "request": {
+      "query": "How has the number of trials for this drug changed per year since 2015?",
+      "drug_name": "Tirzepatide"
+    }
+  },
+  {
+    "name": "02_distribution_phases_huntington",
+    "request": {
+      "query": "How are Huntington's disease trials distributed across phases?"
+    }
+  },
+  {
+    "name": "03_comparison_semaglutide_vs_tirzepatide",
+    "request": {
+      "query": "Compare phases for trials involving semaglutide vs tirzepatide."
+    }
+  },
+  {
+    "name": "04_geographic_dmd_recruiting",
+    "request": {
+      "query": "Which countries have the most recruiting trials for Duchenne muscular dystrophy?"
+    }
+  },
+  {
+    "name": "05_network_sponsor_drug_glioblastoma",
+    "request": {
+      "query": "Show a network of sponsors and drugs for recruiting glioblastoma trials.",
+      "max_citations_per_datum": 5
+    }
+  },
+  {
+    "name": "06_histogram_enrollment_alzheimers_phase3",
+    "request": {
+      "query": "What is the distribution of enrollment sizes for Phase 3 Alzheimer's trials?",
+      "max_citations_per_datum": 5
+    }
+  }
+]
