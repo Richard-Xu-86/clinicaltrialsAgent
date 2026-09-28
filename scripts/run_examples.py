@@ -1,4 +1,4 @@
-"""Run the example requests and write each response to examples/<name>.json.
+"""Run the example requests and write each response to examples/<name>.json. This part is only for testing and proof of concept
 
     python scripts/run_examples.py                 # live API (+ LLM planner if OPENAI_API_KEY is set)
     python scripts/run_examples.py --offline       # replay recorded API responses in examples/recordings

@@ -1,6 +1,6 @@
 # ClinicalTrials.gov Question → Chart Service
 
-This is a small backend service that answers questions about clinical trials with charts. You ask something in plain English, like "How are Huntington's disease trials distributed across phases?", and it goes to ClinicalTrials.gov, pulls the relevant trials, counts them up and sends back a description of a chart that a frontend can draw directly.
+This is a small backend service that answers questions about clinical trials with charts as output. You ask something in plain English, like "How are Huntington's disease trials distributed across phases?", and it goes to ClinicalTrials.gov, pulls the relevant trials, counts them up and sends back a description of a chart that a frontend can draw directly.
 
 What I cared about most is that the answers can be trusted. Every bar, point, histogram bucket, network node and edge comes with the list of trials it was built from. For each trial you get the NCT ID and the exact field in its ClinicalTrials.gov record that put it there, so any number on a chart can be checked by hand.
 
@@ -18,7 +18,7 @@ cp .env.example .env          # then put your OpenAI key in .env
 python -m uvicorn ctviz.api:app --reload
 ```
 
-Once it's running, open http://localhost:8000 to use the demo page, or http://localhost:8000/docs for FastAPI's interactive API docs. You can also call it directly:
+Once it's running, open http://localhost:8000 to use the demo page
 
 ```bash
 curl -s localhost:8000/v1/visualize -H 'content-type: application/json' \
@@ -155,13 +155,5 @@ The raw API responses behind these are saved in `examples/recordings/`, which le
 
 ## Tools, validation, and what was generated
 
-I built this with Claude (Anthropic's AI assistant) as a coding partner. It helped explore the API, write the code, tests and documentation, and review the work. At runtime the service uses OpenAI's `gpt-5.4-mini` to interpret questions. The rest is Python with FastAPI, Uvicorn, Pydantic and httpx, tested with pytest and respx and linted with ruff. The demo page uses Vega-Lite and d3.
+I built this with the help of Claude. It helped explore the API, code, tests and documentation, and review the work. At runtime the service uses OpenAI's `gpt-5.4-mini` to interpret questions. The rest is Python with FastAPI, Uvicorn, Pydantic and httpx, tested with pytest and respx and linted with ruff. The demo page uses Vega-Lite and d3.
 
-For correctness, the first step was learning how the real API behaves before designing around it. That meant querying it directly to see page limits, what happens with invalid fields, how dates are formatted, how often drug searches return trials that don't test the drug, and how lead-sponsor and collaborator searches differ. Several design choices come straight from what those queries showed.
-
-From there, the 132 automated tests cover the drug-name cleanup (using real strings taken from the registry), every planner rule, every chart builder, the HTTP client's retry, paging and caching behavior, and the API endpoints. The test I'd point to first is the citation check. For all six examples, it looks up every citation's field in the raw API data and confirms the value matches exactly, or that the field really is missing for "not reported" groups. It also checks that each data point cites exactly as many different trials as it counts.
-
-I also had a separate review pass go through the code looking for bugs. It found some real ones. Network pruning could drop the most important node or even return an empty graph. "No phase" citations had no evidence attached. Histogram bins collapsed into one when all values were small. Three-way comparisons like "A vs B vs C" were parsed wrongly. All of those are fixed and each has a test so it stays fixed. On top of that, I spot-checked results against the live ClinicalTrials.gov site. For example, the tirzepatide trend shows 6 trials starting in 2021, and asking ClinicalTrials.gov directly returns the same six trials, with start dates and interventions matching the citations. I also checked every chart type visually in the demo.
-
-<!-- Edit this paragraph so it accurately reflects your own contributions. -->
-As for what was designed deliberately versus generated: the overall approach came from working through the brief and the grading criteria before any code was written. That approach is to keep the language model to interpretation only, make every count a set of citable trials, and verify search results rather than trust them. I chose OpenAI as the model and asked for Python 3.10 support so it's easy to run, and I tested the behavior myself, including checking results against ClinicalTrials.gov. Most of the code, tests and documentation were generated with Claude and then adapted through review. That included narrowing the service to OpenAI only, fixing the issues the review turned up, tightening the drug-name rules against real registry data, and tidying up the demo.
